@@ -1,0 +1,46 @@
+html { margin:0px;
+	padding:0px;
+}
+body {
+	margin:0px;
+}
+div#header {
+	background:#80bfff;
+}
+div#Content {
+	display:flex;
+	align-self: stretch;
+	justify-content: center;
+}
+#Content p {
+	display: flex;
+	align-self:right;
+	width:800px;
+	margin:0px;
+}
+h1 {
+	display: flex;
+	justify-content:center; 
+	margin: 0px;
+}
+div#footer {
+	background: #cccccc;
+	text-align: right;
+}
+#footer ul {
+	margin: 0px;
+}
+#footer li{
+	margin:5px;
+	display: inline;
+}
+ul#menu {
+	width: 200px;
+	background: #79d279;
+	padding: 0px;
+	margin: 0px;
+	list-style:none;
+}
+#menu li{
+	margin:5px;
+}
