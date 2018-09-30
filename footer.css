@@ -1,0 +1,11 @@
+div#footer {
+	background: #cccccc;
+	text-align: right;
+}
+#footer ul {
+	margin: 0px;
+}
+#footer li{
+	margin:5px;
+	display: inline;
+}
