@@ -1,8 +1,10 @@
 html { margin:0px;
 	padding:0px;
+	font-family:'Palanquin', sans-serif;
+	font-size:20;
 }
 body {
-	margin:0px;
+	margin:00px;
 }
 div#header {
 	background:#80bfff;
@@ -16,7 +18,9 @@ div#Content {
 	display: flex;
 	align-self:right;
 	width:800px;
-	margin:0px;
+	margin:10px;
+	margin-left:20px;
+	padding:0px;
 }
 h1 {
 	display: flex;
