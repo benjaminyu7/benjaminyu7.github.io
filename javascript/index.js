@@ -50,6 +50,5 @@ let sideMenu = function () {
 }
 
 header_funct();
-sideMenu();
 description();
 footer_func();

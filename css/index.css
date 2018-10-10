@@ -5,22 +5,24 @@ html { margin:0px;
 }
 body {
 	margin:00px;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-content: center;
 }
 div#header {
 	background:#80bfff;
 }
 div#Content {
 	display:flex;
-	align-self: stretch;
-	justify-content: center;
+	flex-direction: column;
 }
-#Content p {
-	display: flex;
-	align-self:right;
+ p.bio {
 	width:800px;
 	margin:10px;
 	margin-left:20px;
 	padding:0px;
+	align-self:center;
 }
 h1 {
 	display: flex;
