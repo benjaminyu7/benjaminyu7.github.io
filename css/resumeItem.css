@@ -1,6 +1,7 @@
 div.ResumeItem {
     width: 800px;
     align-self: center;
+    margin-top: 20px;
 }
 
 .ResumeItem h3 {
@@ -16,13 +17,12 @@ div.ResumeItem {
 }
 .ResumeItem ul{
     margin:0px;
-    padding-left: 10px;
 }
 .ResumeDuties li{
-    font-size: 18px;
+	font-size: 18px;
 }
 .ResumeSkills li{
 	margin:5px;
-    display: inline;
-    font-size: 16px;
+	display: inline;
+	font-size: 16px;
 }

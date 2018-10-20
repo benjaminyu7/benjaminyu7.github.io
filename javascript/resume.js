@@ -1,17 +1,69 @@
+let createList = function(items, attribute, attribute_name){
+	let listWrapper = document.createElement('ul');
+	listWrapper.setAttribute(attribute,attribute_name);
+	for ( var x in items) {
+		let element = document.createElement('li');
+		element.textContent=items[x];
+		listWrapper.appendChild(element);
+	}
+	return listWrapper;
+}
+
 let Experience = function (title, locat, date, tasks, technologies) {
 	this.title = title;
 	this.locat=locat;
 	this.date=date;
 	this.tasks=tasks;
 	this.technologies=technologies;
-	this.toHtml=function (id) {}
+	this.make_resume_item = function () {
+		let content=document.getElementById('content');
+		let wrapper = document.createElement('div');
+		wrapper.setAttribute('class', 'ResumeItem');
+		let title = document.createElement('h3');
+		title.textContent=this.title;
+		
+		let date = document.createElement('h4');
+		date.textContent=this.date;
+
+		let address = document.createElement('p');
+		address.textContent=this.locat;
+
+		let resumeTasks = createList(this.tasks,'class', 'ResumeDuties');
+		let resumeSkills = createList(this.technologies, 'class', 'ResumeSkills');
+		
+		
+		wrapper.appendChild(title);
+		wrapper.appendChild(date);
+		wrapper.appendChild(address);
+		wrapper.appendChild(resumeTasks);
+		wrapper.appendChild(resumeSkills);
+		content.appendChild(wrapper);
+	};
 }
 
-let make_resume_item = function (title, locat, date, tasks, technologies) {
+
+let make_resume_item = function (newTitle, locat, newDate, tasks, technologies) {
 	let content=document.getElementById('content');
 	let wrapper = document.createElement('div');
+	wrapper.setAttribute('class', 'ResumeItem');
 	let title = document.createElement('h3');
+	title.textContent=newTitle;
+	
 	let date = document.createElement('h4');
+	date.textContent=newDate;
+
 	let address = document.createElement('p');
-	let resumeTasks = document.createElement('ul');
+	address.textContent=locat;
+
+	let resumeTasks = createList(tasks,'class', 'ResumeDuties');
+	let resumeSkills = createList(technologies, 'class', 'ResumeSkills');
+	
+	
+	wrapper.appendChild(title);
+	wrapper.appendChild(date);
+	wrapper.appendChild(address);
+	wrapper.appendChild(resumeTasks);
+	wrapper.appendChild(resumeSkills);
+	content.appendChild(wrapper);
+	
 }

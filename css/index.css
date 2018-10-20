@@ -1,4 +1,5 @@
-html { margin:0px;
+html { 
+	margin:0px;
 	padding:0px;
 	font-family:'Palanquin', sans-serif;
 	font-size:20;
@@ -17,13 +18,17 @@ div#Content {
 	display:flex;
 	flex-direction: column;
 }
- p.bio {
-	width:800px;
+p#bio {
 	margin:10px;
 	margin-left:20px;
 	padding:0px;
 	align-self:center;
 }
+
+#bio_pic {
+	margin:10px;
+}
+
 h1 {
 	display: flex;
 	justify-content:center; 
