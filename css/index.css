@@ -15,14 +15,14 @@ div#header {
 	background: #FFFFFF;
 }
 #header h1 {
-	font-family: georgia;
+	/*font-family: georgia;*/
 	font-weight: lighter;
 	font-size: 32;
-	padding-top: 2px;
+	padding-top: 0px;
 	padding-bottom: 3px;
 	color: #0086b3;
 	margin: 0px;
-	margin-left: 12px;
+	margin-left: 16px;
 	display: flex;
 }
 div#Content {
