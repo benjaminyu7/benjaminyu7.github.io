@@ -12,11 +12,23 @@ body {
 	align-content: center;
 }
 div#header {
-	background:#80bfff;
+	background: #0099cc;
+}
+#header h1 {
+	font-family: georgia;
+	font-weight: lighter;
+	font-size: 32;
+	padding-bottom: 3px;
+	color: white;
+	margin: 0px;
+	margin-left: 12px;
+	display: flex;
 }
 div#Content {
 	display:flex;
 	flex-direction: column;
+	background: #8cd893;
+	padding: 20px;
 }
 p#bio {
 	margin:10px;
@@ -29,11 +41,6 @@ p#bio {
 	margin:10px;
 }
 
-h1 {
-	display: flex;
-	justify-content:center; 
-	margin: 0px;
-}
 ul#menu {
 	width: 200px;
 	background: #79d279;
