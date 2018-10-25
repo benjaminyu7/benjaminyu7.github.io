@@ -7,8 +7,6 @@ body {
 	margin:00px;
 	display:flex;
 	flex-direction: column;
-	justify-content:center;
-	align-content: center;
 }
 div#header {
 	background:#80bfff;
