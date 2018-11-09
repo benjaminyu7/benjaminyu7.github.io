@@ -21,5 +21,6 @@ let footer_func = function () {
 	links.appendChild(mailto);
 	make_footer_link(links, 'Resume', './documents/BenjaminYuResume.pdf');
 	make_footer_link(links, 'LinkedIn', 'https://www.linkedin.com/in/benjamin-yu-98592096/');
+	make_footer_link(links,'GitHub','https://github.com/benjaminyu7');
 	footer.appendChild(links);
 };
