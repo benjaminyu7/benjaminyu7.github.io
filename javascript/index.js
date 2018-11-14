@@ -9,6 +9,7 @@ let section = function (title) {
 	let content = document.getElementById('content');
 	let sectionTitle = document.createElement('h2');
 	sectionTitle.textContent=title;
+	sectionTitle.setAttribute('class','section');
 	content.appendChild(sectionTitle);
 }
 

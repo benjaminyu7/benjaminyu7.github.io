@@ -1,0 +1,11 @@
+html { 
+	margin:0px;
+	padding:0px;
+	font-family:'Palanquin', sans-serif;
+	font-size:20;
+}
+body {
+	margin:00px;
+	display:flex;
+	flex-direction: column;
+}

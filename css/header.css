@@ -1,0 +1,27 @@
+html { 
+	margin:0px;
+	padding:0px;
+	font-family:'Palanquin', sans-serif;
+	font-size:20;
+}
+a {
+    text-decoration: none;
+    align-self: center;
+    padding-left: 20px;
+    float: right;
+}
+div#header {
+    background: #FFFFFF;
+    display: flex;
+}
+#name {
+	/*font-family: georgia;*/
+	font-weight: lighter;
+	font-size: 32;
+	padding: 0px;
+	padding-bottom: 3px;
+	color: #0086b3;
+	margin: 0px;
+	margin-left: 16px;
+	display: flex;
+}

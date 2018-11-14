@@ -1,10 +1,12 @@
 let header_funct = function () {
 	let header = document.getElementById('header');
-	let name = document.createElement('h1');
-	name.textContent="Benjamin Yu";
+	let nameLink = document.createElement('a');
+	nameLink.textContent="Benjamin Yu";
+	nameLink.setAttribute('href','index.html');
+	nameLink.setAttribute('id','name');
 	let technicalWriting = document.createElement('a');
 	technicalWriting.textContent='Technical Writing';
 	technicalWriting.setAttribute('href','technicalWriting.html');
-	header.appendChild(name);
+	header.appendChild(nameLink);
 	header.appendChild(technicalWriting);
 };

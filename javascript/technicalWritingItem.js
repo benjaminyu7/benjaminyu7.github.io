@@ -1,0 +1,1 @@
+//Creates the technicalWriting items with a picture and description
