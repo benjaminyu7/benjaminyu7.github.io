@@ -27,6 +27,8 @@ let sideMenu = function () {
 }
 
 header_funct();
+section('Education');
+make_resume_item('Stony Brook University', 'Bachelor of Science in Computer Science', 'Expected Graduation: May 2019', ['Coursework: Databases, Programming Languages, Systems Administration, Algorithms, Machine Learning, Networking, System Fundamentals, Data Structures, Technical Writing'],[]);
 section('Work Experience');
 let hpc_engineer= new Experience('High Performance Computing Engineer', 'Institution for Advanced Computational Science', 'May 2018 - Present',['Implemented unit tests to automate software environment maintenance of over 100 open source and enterprise applications in a parallel file system on CentOS Linux','Convert code to run in parallel using multiple nodes and cores','Resolved hundreds of Customer Service tickets by troubleshooting and debugging system issues'], ['Bash','Python','CentOS','GPFS','Torque']); 
 hpc_engineer.make_resume_item();

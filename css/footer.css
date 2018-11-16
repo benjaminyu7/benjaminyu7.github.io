@@ -4,6 +4,7 @@ div#footer {
 }
 #footer ul {
 	margin: 0px;
+	margin-right: 20px;
 }
 #footer li{
 	margin:5px;
