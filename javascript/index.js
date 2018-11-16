@@ -36,4 +36,3 @@ make_resume_item('Synchronized To-do List', '','Summer 2018', ['Online to-do lis
 make_resume_item('System Storage','','Spring 2018',['Simulation of low level memory with concurrent memory access, caching and paging.'],['C']);
 make_resume_item('Game Win Predictor', '', 'Spring 2018', ['Implemented Machine Learning Models to predict wins from character selection and game mode with 60% Accuracy.'],['Python','Tensorflow']);
 make_resume_item('Subway Map Maker','','Fall 2017',['Desktop GUI Application to build maps, allowing users to add/drag objects, undo/redo, saving/loading, etc.'],['Java']);
-footer_func();

@@ -24,3 +24,4 @@ let footer_func = function () {
 	make_footer_link(links,'GitHub','https://github.com/benjaminyu7');
 	footer.appendChild(links);
 };
+footer_func();

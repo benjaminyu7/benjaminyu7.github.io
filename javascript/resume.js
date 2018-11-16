@@ -1,3 +1,8 @@
+/* Creates a ul with list items 
+ * items = text items
+ * attribute = sets an attribute
+ * attribute_name = value to set the attribute
+ */
 let createList = function(items, attribute, attribute_name){
 	let listWrapper = document.createElement('ul');
 	listWrapper.setAttribute(attribute,attribute_name);
@@ -41,7 +46,13 @@ let Experience = function (title, locat, date, tasks, technologies) {
 	};
 }
 
-
+/* Creates a resume item and add it to the content id
+ * newTitle=Title of item
+ * locat=Location of the job/project
+ * newDate=date that the activity happened
+ * tasks=list of tasks
+ * technologies=list of technologies used
+ */
 let make_resume_item = function (newTitle, locat, newDate, tasks, technologies) {
 	let content=document.getElementById('content');
 	let wrapper = document.createElement('div');
