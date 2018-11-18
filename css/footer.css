@@ -10,3 +10,7 @@ div#footer {
 	margin:5px;
 	display: inline;
 }
+#footer a {
+	text-decoration: none;
+	color: black;
+}

@@ -26,6 +26,8 @@ p#bio {
 
 #bio_pic {
 	margin:10px;
+	border-radius: 50%;
+	border: 3px solid #0086b3;
 }
 
 ul#menu {
