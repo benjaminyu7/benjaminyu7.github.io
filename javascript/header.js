@@ -5,7 +5,7 @@ let header_funct = function () {
 	nameLink.setAttribute('href','index.html');
 	nameLink.setAttribute('id','name');
 	let technicalWriting = document.createElement('a');
-	technicalWriting.textContent='Technical Writing';
+	technicalWriting.textContent='Technical Communication';
 	technicalWriting.setAttribute('href','technicalWriting.html');
 	header.appendChild(nameLink);
 	header.appendChild(technicalWriting);

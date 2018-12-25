@@ -11,17 +11,20 @@ let make_footer_link = function (links, name, link) {
 
 
 let footer_func = function () {
-	let footer = document.getElementById('footer');
+	let content = document.getElementById('content');
+	let footer = document.createElement('div');
 	let links = document.createElement('ul');
 	let mailto = document.createElement('li');
 	let mailto_link = document.createElement('a');
+	footer.setAttribute('id', 'footer');
 	mailto_link.textContent="Email";
-	mailto_link.setAttribute('href','mailto:benjaminyu.741@gmail.com')
+	mailto_link.setAttribute('href','mailto:benjaminyu.741@gmail.com');
 	mailto.appendChild(mailto_link);
 	links.appendChild(mailto);
 	make_footer_link(links, 'Resume', './documents/BenjaminYuResume.pdf');
 	make_footer_link(links, 'LinkedIn', 'https://www.linkedin.com/in/benjamin-yu-98592096/');
 	make_footer_link(links,'GitHub','https://github.com/benjaminyu7');
 	footer.appendChild(links);
+	content.appendChild(footer);
 };
 footer_func();

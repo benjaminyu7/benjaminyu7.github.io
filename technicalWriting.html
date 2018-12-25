@@ -8,12 +8,12 @@
     </head>
     <body>
         <div id='header'></div>
-	<div id = 'content'>
-		<p id='TechDescription'>The following items are samples of technical writing for the course Technical Communications at Stony Brook University</p>
+	<div style='height: calc(100% - 50px); overflow: scroll'>
+		<div id = 'content'>
+			<p id='TechDescription'>The following items are samples of technical writing for the course Technical Communications at Stony Brook University</p>
+		</div>
 	</div>
-	<div id='footer'></div>
         <script src='javascript/header.js'></script>
-	<script src='javascript/footer.js'></script>	
 	<script src='javascript/technicalWritingItem.js'></script>
         <script>
 		header_funct();
@@ -22,5 +22,6 @@
 		make_writing_item('documents/newsRelease.png','News Release', 'Opening of an art exhibit in the Charles B. Wang center','documents/technicalWriting/NewsRelease.pdf');
 		make_writing_item('documents/collabSolving.png','Collaborative Problem Solving', 'Group project proposing a solution to the problem of using digital devices in class','documents/technicalWriting/collaborativeGroupAssignment.pdf');
 	</script>
+	<script src='javascript/footer.js'></script>	
     </body>
 </html>

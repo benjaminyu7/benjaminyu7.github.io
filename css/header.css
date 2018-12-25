@@ -14,6 +14,7 @@ html {
 div#header {
     background: #FFFFFF;
     display: flex;
+    height: 50px;
 }
 a#name  {
 	/*font-family: georgia;*/
