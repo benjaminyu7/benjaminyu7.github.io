@@ -28,13 +28,13 @@ let sideMenu = function () {
 
 header_funct();
 section('Education');
-make_resume_item('Stony Brook University', 'Bachelor of Science in Computer Science', 'Expected Graduation: May 2019', ['Coursework: Databases, Programming Languages, Systems Administration, Algorithms, Machine Learning, Networking, System Fundamentals, Data Structures, Technical Writing'],[]);
+make_resume_item('Stony Brook University', 'Bachelor of Science in Computer Science', 'Expected Graduation: May 2019', ['Coursework: Software Development, Cloud Computing, Databases, Programming Languages, Algorithms, Machine Learning, Networking, System Fundamentals, Data Structures'],[]);
 section('Work Experience');
 let hpc_engineer= new Experience('High Performance Computing Engineer', 'Institution for Advanced Computational Science', 'May 2018 - Present',['Implemented unit tests to automate software environment maintenance of over 100 open source and enterprise applications in a parallel file system on CentOS Linux','Convert code to run in parallel using multiple nodes and cores','Resolved hundreds of Customer Service tickets by troubleshooting and debugging system issues'], ['Bash','Python','CentOS','GPFS','Torque']); 
 hpc_engineer.make_resume_item();
-make_resume_item('Teaching Assistant','Stony Brook University','Jan - May 2018',['Course: Foundations of Logic and Mathematics in Computer Science','Taught recitation classes for 80 students and hosted review sessions'],[]);
+make_resume_item('Computer Science Teaching Assistant','Stony Brook University','Jan - May 2018',['Taught and held review sessions for 80 students in Foundations of Logic and Mathematics'],[]);
 section('Projects');
+make_resume_item('Movie Database','','Fall 2018',['Online Database for users to search information about movies and actors.'],['CentOS','VMWare Workstation','PHP', 'MySql', 'Git', 'Apache']);
 make_resume_item('Synchronized To-do List', '','Summer 2018', ['Online to-do list accessible across mobile and web clients, allowing users to retrieve and update their list globally.'],['React-Native', 'React.js', 'Ajax', 'Html', 'CSS', 'AWS', 'PHP', 'MySql', 'Git']);
-make_resume_item('System Storage','','Spring 2018',['Simulation of low level memory with concurrent memory access, caching and paging.'],['C']);
 make_resume_item('Game Win Predictor', '', 'Spring 2018', ['Implemented Machine Learning Models to predict wins from character selection and game mode with 60% Accuracy.'],['Python','Tensorflow']);
 make_resume_item('Subway Map Maker','','Fall 2017',['Desktop GUI Application to build maps, allowing users to add/drag objects, undo/redo, saving/loading, etc.'],['Java']);
