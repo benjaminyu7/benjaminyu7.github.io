@@ -1,7 +1,8 @@
 /* import header.js
  * import resume.js
  * import index.js
- * /
+ */
+
 let description = function () {
 	let content = document.getElementById('content');
 	let description = document.createElement('p');
