@@ -26,17 +26,12 @@ let Experience = function (title, locat, date, tasks, technologies) {
 		wrapper.setAttribute('class', 'ResumeItem');
 		let title = document.createElement('h3');
 		title.textContent=this.title;
-		
 		let date = document.createElement('h4');
 		date.textContent=this.date;
-
 		let address = document.createElement('p');
 		address.textContent=this.locat;
-
 		let resumeTasks = createList(this.tasks,'class', 'ResumeDuties');
 		let resumeSkills = createList(this.technologies, 'class', 'ResumeSkills');
-		
-		
 		wrapper.appendChild(title);
 		wrapper.appendChild(date);
 		wrapper.appendChild(address);
@@ -44,6 +39,7 @@ let Experience = function (title, locat, date, tasks, technologies) {
 		wrapper.appendChild(resumeSkills);
 		content.appendChild(wrapper);
 	};
+	return this;
 }
 
 /* Creates a resume item and add it to the content id
@@ -59,22 +55,16 @@ let make_resume_item = function (newTitle, locat, newDate, tasks, technologies) 
 	wrapper.setAttribute('class', 'ResumeItem');
 	let title = document.createElement('h3');
 	title.textContent=newTitle;
-	
 	let date = document.createElement('h4');
 	date.textContent=newDate;
-
 	let address = document.createElement('p');
 	address.textContent=locat;
-
 	let resumeTasks = createList(tasks,'class', 'ResumeDuties');
 	let resumeSkills = createList(technologies, 'class', 'ResumeSkills');
-	
-	
 	wrapper.appendChild(title);
 	wrapper.appendChild(date);
 	wrapper.appendChild(address);
 	wrapper.appendChild(resumeTasks);
 	wrapper.appendChild(resumeSkills);
 	content.appendChild(wrapper);
-	
 }
