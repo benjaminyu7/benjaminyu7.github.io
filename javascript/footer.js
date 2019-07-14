@@ -11,7 +11,7 @@ let make_footer_link = function (links, name, link) {
 
 
 let footer_func = function () {
-	let content = document.getElementById('content');
+	let placement = document.getElementById('footerPlacement');
 	let footer = document.createElement('div');
 	let links = document.createElement('ul');
 	let mailto = document.createElement('li');
@@ -25,6 +25,6 @@ let footer_func = function () {
 	make_footer_link(links, 'LinkedIn', 'https://www.linkedin.com/in/benjamin-yu-98592096/');
 	make_footer_link(links,'GitHub','https://github.com/benjaminyu7');
 	footer.appendChild(links);
-	content.appendChild(footer);
+	placement.appendChild(footer);
 };
 footer_func();

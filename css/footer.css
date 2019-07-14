@@ -1,5 +1,7 @@
+#footerPlacement ul {
+	margin-top: 20px;
+}
 div#footer {
-	margin-top:20px;
 	background: #ffffff;
 	text-align: right;
 }

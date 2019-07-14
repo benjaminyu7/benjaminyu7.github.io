@@ -1,7 +1,0 @@
-let header_funct = function () {
-	let header = document.getElementById('header');
-	let name = document.createElement('h1');
-	name.textContent="Benjamin Yu";
-	header.appendChild(name);
-}
-header_funct();

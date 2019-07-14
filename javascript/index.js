@@ -18,28 +18,29 @@ let sectionHeader = function (title) {
 	content.appendChild(sectionTitle);
 }
 
-let sideMenu = function () {
-	let content = document.getElementById('Content');
-	let menu = document.createElement('ul');
-	menu.setAttribute('id','menu');
-	let experience = document.createElement('li');
-	experience.textContent="Experience";
-	let projects = document.createElement('li');
-	projects.textContent="Projects";
-	menu.appendChild(experience);
-	menu.appendChild(projects);
-	content.appendChild(menu);
-}
-
 header_funct();
-sectionHeader('Education');
-make_resume_item('Stony Brook University', 'Bachelor of Science in Computer Science', 'Expected Graduation: May 2019', ['Coursework: Software Development, Cloud Computing, Databases, Programming Languages, Algorithms, Machine Learning, Networking, System Fundamentals, Data Structures'],[]);
-sectionHeader('Work Experience');
-let hpc_engineer= new Experience('High Performance Computing Engineer', 'Institution for Advanced Computational Science', 'May 2018 - Present',['Implemented unit tests to automate software environment maintenance of over 100 open source and enterprise applications in a parallel file system on CentOS Linux','Convert code to run in parallel using multiple nodes and cores','Resolved hundreds of Customer Service tickets by troubleshooting and debugging system issues'], ['Bash','Python','CentOS','GPFS','Torque']); 
-hpc_engineer.make_resume_item();
-make_resume_item('Computer Science Teaching Assistant','Stony Brook University','Jan - May 2018',['Taught and held review sessions for 80 students in Foundations of Logic and Mathematics'],[]);
-sectionHeader('Projects');
-make_resume_item('Movie Database','','Fall 2018',['Online Database for users to search information about movies and actors.'],['CentOS','VMWare Workstation','PHP', 'MySql', 'Git', 'Apache']);
-make_resume_item('Synchronized To-do List', '','Summer 2018', ['Online to-do list accessible across mobile and web clients, allowing users to retrieve and update their list globally.'],['React-Native', 'React.js', 'Ajax', 'Html', 'CSS', 'AWS', 'PHP', 'MySql', 'Git']);
-make_resume_item('Game Win Predictor', '', 'Spring 2018', ['Implemented Machine Learning Models to predict wins from character selection and game mode with 60% Accuracy.'],['Python','Tensorflow']);
-make_resume_item('Subway Map Maker','','Fall 2017',['Desktop GUI Application to build maps, allowing users to add/drag objects, undo/redo, saving/loading, etc.'],['Java']);
+
+fetch("./documents/resume.json")
+	.then(response => response.json())
+	.then(parsed => {
+		sectionHeader('Work Experience');
+		for (let experience in parsed.workExperiences) {
+			experience = parsed.workExperiences[experience];
+			let resumeItem = new Experience(experience.title, experience.location, experience.dates, experience.tasks, experience.technologies);
+			resumeItem.make_resume_item();
+		}
+
+		sectionHeader('Education');
+		let education = parsed.education;
+		let educationItem = new Experience(education.school, education.degree, education.graduationDate, education.courses, []);
+		educationItem.make_resume_item();
+
+		sectionHeader('Projects');
+		for (let project in parsed.projects) {
+			project = parsed.projects[project];
+			let resumeItem = new Experience(project.title, "", project.dates, project.tasks, project.technologies);
+			resumeItem.make_resume_item();
+		}
+	});
+
+

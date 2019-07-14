@@ -1,0 +1,51 @@
+{
+    "workExperiences": [
+        {
+            "title":"High Performance Computing Engineer", 
+            "location":"Institution for Advanced Computational Science", 
+            "dates":"May 2018 - Present",
+            "tasks": ["Implemented unit tests to automate software environment maintenance of over 100 open source and enterprise applications in a parallel file system on CentOS Linux","Convert code to run in parallel using multiple nodes and cores","Resolved hundreds of Customer Service tickets by troubleshooting and debugging system issues"], 
+            "technologies": ["Bash","Python","CentOS","GPFS","Torque"]
+        },
+        { 
+            "title": "Computer Science Teaching Assistant",
+            "location":"Stony Brook University",
+            "dates":"Jan - May 2018",
+            "tasks": ["Taught and held review sessions for 80 students in Foundations of Logic and Mathematics"],
+            "technologies": []
+        }
+    ],
+    "education": {
+        "school": "Stony Brook University",
+        "degree": "Bachelor of Science in Computer Science",
+        "graduationDate": "May 2019",
+        "courses": ["Coursework: Software Development, Cloud Computing, Databases, Programming Languages, Algorithms, Machine Learning, Networking, System Fundamentals, Data Structures"]
+    },
+    "projects": [
+        {
+            "title": "Movie Database",
+            "dates": "Fall 2018",
+            "tasks": ["Online Database for users to search information about movies and actors."],
+            "technologies": ["CentOS","VMWare Workstation","PHP", "MySql", "Git", "Apache"]
+        },
+        {
+            "title": "Synchronized To-do List",
+            "dates": "Summer 2018", 
+            "tasks": ["Online to-do list accessible across mobile and web clients, allowing users to retrieve and update their list globally."],
+            "technologies": ["React-Native", "React.js", "Ajax", "Html", "CSS", "AWS", "PHP", "MySql", "Git"]
+        },
+        {
+            "title": "Game Win Predictor",
+            "dates": "Spring 2018", 
+            "tasks": ["Implemented Machine Learning Models to predict wins from character selection and game mode with 60% Accuracy."],
+            "technologies": ["Python","Tensorflow"]
+        },
+        {
+            "title": "Subway Map Maker",
+            "dates": "Fall 2017",
+            "tasks": ["Desktop GUI Application to build maps, allowing users to add/drag objects, undo/redo, saving/loading, etc."],
+            "technologies": ["Java"]
+        }
+    ]
+}
+		
