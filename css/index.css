@@ -21,13 +21,13 @@ p#bio {
 	padding:0px;
 	padding-top:20px;
 	align-self:center;
-	color: #006080;
+	color: #000000;
 }
 
 #bio_pic {
 	margin:10px;
 	border-radius: 50%;
-	border: 3px solid #0086b3;
+	border: 3px solid #FFFFFF;
 }
 
 ul#menu {

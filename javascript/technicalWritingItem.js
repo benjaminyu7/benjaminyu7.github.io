@@ -1,8 +1,11 @@
+/**
+ * When a writing item is displayed on the technical writing page it displays an styled image, title, description and link to the document
+ */
 let make_writing_item = function (imageSrc, titleTxt, descriptionTxt, linkDoc) {
 	let content=document.getElementById('content');
 	let wrapper = document.createElement('div');
 	wrapper.setAttribute('class','TechWriteItem');
-	wrapper.setAttribute('style','margin-top: 20px; width: 760px; align-self: center; padding-left: 20px; background: white; border-radius: 240px; background: #FFF8EF;');
+	wrapper.setAttribute('style','margin-bottom: 20px; width: 760px; align-self: center; padding-left: 20px; background: white; border-radius: 240px; background: #FFF8EF;');
 
 	let image = document.createElement('img');
 	image.setAttribute('src',imageSrc);

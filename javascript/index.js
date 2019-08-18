@@ -3,13 +3,6 @@
  * import index.js
  */
 
-let description = function () {
-	let content = document.getElementById('content');
-	let description = document.createElement('p');
-	description.textContent='I am a Stony Brook University student looking to graduate in May 2019. I am looking for full time opportunities after graduation. I am currently a High Performance Computing Engineer at the Institution for Advanced Computational Sciences with a strong understanding of distributed system and customer support experience.';
-	content.appendChild(description);
-};
-
 let sectionHeader = function (title) {
 	let content = document.getElementById('content');
 	let sectionTitle = document.createElement('h2');
@@ -23,6 +16,9 @@ header_funct();
 fetch("./documents/resume.json")
 	.then(response => response.json())
 	.then(parsed => {
+		let biography = document.getElementById('bio');
+		biography.textContent = parsed.biography;
+
 		sectionHeader('Work Experience');
 		for (let experience in parsed.workExperiences) {
 			experience = parsed.workExperiences[experience];
