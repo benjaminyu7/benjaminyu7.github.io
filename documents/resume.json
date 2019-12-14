@@ -5,13 +5,8 @@
             "title":"Software Development Engineer",
             "location":"Amazon - Consumer Organization",
             "dates":"June 2019 - Present",
-<<<<<<< HEAD
             "tasks": ["Develop service to inform customers of healthcare payment options in Java to create consistency in information displayed on the retail site",
                 "Create environment and deploy service using proprietary cloud management software"], 
-=======
-            "tasks": ["Create, configure and deploy service with continuous integration to onboard with the service of a partner team using AWS, EC2, Lambda, BONES, Cloudformation, VPC",
-                "Develop service to inform customers of healthcare payment options in Java to create consistency in information displayed on the retail site and AB tested to ensure positive customer experience"], 
->>>>>>> 3e2d4a00ae143d33a60688fe121a6c7103e5b4fe
             "technologies": ["Bash","Java","Redhat Linux","Agile Development"]
         },
         {
