@@ -4,6 +4,7 @@ html {
 	font-family:'Palanquin', sans-serif;
 	font-size:20;
 }
+
 #header a {
     text-decoration: none;
     align-self: center;
@@ -14,8 +15,11 @@ html {
 div#header {
     background: #FFFFFF;
     display: flex;
-    height: 50px;
+	height: 50px;
+	width: 100%;
+	position: fixed;
 }
+
 a#name  {
 	/*font-family: georgia;*/
 	font-weight: lighter;
