@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/personalbrandapp/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/personalbrandapp/static/js/main.456b0df6.chunk.js",
+    "main.js.map": "/personalbrandapp/static/js/main.456b0df6.chunk.js.map",
+    "runtime-main.js": "/personalbrandapp/static/js/runtime-main.1bd4406f.js",
+    "runtime-main.js.map": "/personalbrandapp/static/js/runtime-main.1bd4406f.js.map",
+    "static/js/2.baa69c9d.chunk.js": "/personalbrandapp/static/js/2.baa69c9d.chunk.js",
+    "static/js/2.baa69c9d.chunk.js.map": "/personalbrandapp/static/js/2.baa69c9d.chunk.js.map",
+    "index.html": "/personalbrandapp/index.html",
+    "precache-manifest.6f4b4254e3f734bc4f81efff33704488.js": "/personalbrandapp/precache-manifest.6f4b4254e3f734bc4f81efff33704488.js",
+    "service-worker.js": "/personalbrandapp/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/personalbrandapp/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.baa69c9d.chunk.js.LICENSE": "/personalbrandapp/static/js/2.baa69c9d.chunk.js.LICENSE",
+    "static/media/aboutme.md": "/personalbrandapp/static/media/aboutme.3c158fd2.md"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1bd4406f.js",
+    "static/js/2.baa69c9d.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.456b0df6.chunk.js"
+  ]
+}
