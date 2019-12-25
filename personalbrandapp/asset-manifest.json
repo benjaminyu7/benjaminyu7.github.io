@@ -1,23 +1,22 @@
 {
   "files": {
     "main.css": "/personalbrandapp/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/personalbrandapp/static/js/main.e0cb9e31.chunk.js",
-    "main.js.map": "/personalbrandapp/static/js/main.e0cb9e31.chunk.js.map",
+    "main.js": "/personalbrandapp/static/js/main.a8102627.chunk.js",
+    "main.js.map": "/personalbrandapp/static/js/main.a8102627.chunk.js.map",
     "runtime-main.js": "/personalbrandapp/static/js/runtime-main.1bd4406f.js",
     "runtime-main.js.map": "/personalbrandapp/static/js/runtime-main.1bd4406f.js.map",
-    "static/js/2.412efb40.chunk.js": "/personalbrandapp/static/js/2.412efb40.chunk.js",
-    "static/js/2.412efb40.chunk.js.map": "/personalbrandapp/static/js/2.412efb40.chunk.js.map",
+    "static/js/2.83f21649.chunk.js": "/personalbrandapp/static/js/2.83f21649.chunk.js",
+    "static/js/2.83f21649.chunk.js.map": "/personalbrandapp/static/js/2.83f21649.chunk.js.map",
     "index.html": "/personalbrandapp/index.html",
-    "precache-manifest.e1f89dcc528016d0b39b03be9bb045b8.js": "/personalbrandapp/precache-manifest.e1f89dcc528016d0b39b03be9bb045b8.js",
+    "precache-manifest.c98adcdbe5c0a009977437073ee76cfb.js": "/personalbrandapp/precache-manifest.c98adcdbe5c0a009977437073ee76cfb.js",
     "service-worker.js": "/personalbrandapp/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/personalbrandapp/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.412efb40.chunk.js.LICENSE": "/personalbrandapp/static/js/2.412efb40.chunk.js.LICENSE",
-    "static/media/aboutme.md": "/personalbrandapp/static/media/aboutme.e7c134b2.md"
+    "static/js/2.83f21649.chunk.js.LICENSE": "/personalbrandapp/static/js/2.83f21649.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.1bd4406f.js",
-    "static/js/2.412efb40.chunk.js",
+    "static/js/2.83f21649.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.e0cb9e31.chunk.js"
+    "static/js/main.a8102627.chunk.js"
   ]
 }

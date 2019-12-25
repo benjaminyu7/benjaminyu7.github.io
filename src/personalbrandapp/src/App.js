@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
-import ButtonAppBar from './ButtonAppBar';
+import Blog from './js/blog/Blog';
+import ButtonAppBar from './js/ButtonAppBar';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import Markdown from './Markdown';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import BLOGPOST from './blogpost.json';
-import aboutme from './aboutme.md';
+import BLOGPOST from './blogposts/blogpost.json';
 import { withStyles } from '@material-ui/core/styles';
 
 
@@ -19,10 +18,15 @@ const theme = createMuiTheme({
 });
 
 const styles = theme => ({
-  markdown: {
+  headerSpace: {
     ...theme.typography.body2,
     paddingTop: theme.spacing(10),
   },
+  background: {
+    backgroundColor: '#FFF8EF',
+    minHeight: '100vh',
+    padding: theme.spacing(3),
+  }
 });
 
 class App extends Component {
@@ -30,33 +34,19 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { blogpost: []};
-  }
-
-  componentDidMount() {
-    const { classes } = this.props;
-    for (var index in BLOGPOST.filename) {
-      fetch("/" + BLOGPOST.filename[index]).then((response) => response.text())
-        .then(text => {
-          console.log(this.state.blogpost);
-          this.setState({blogpost: this.state.blogpost.concat(
-            <Markdown className={classes.markdown}>
-              {text}
-            </Markdown>
-          )})})
-    }
   }
 
   render() {
     const { classes } = this.props;
 
     return (
-      <div className="App">
+      <div className={classes.background}>
         <MuiThemeProvider theme={theme}>
           <ButtonAppBar />
+          <div className={classes.headerSpace}/>
           <Container>
             <Grid item  xs={12} md={12}>
-              {this.state.blogpost}
+              <Blog blogposts={BLOGPOST} />
             </Grid>
           </Container>
         </MuiThemeProvider>
