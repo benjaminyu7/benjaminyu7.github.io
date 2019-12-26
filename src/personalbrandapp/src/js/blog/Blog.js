@@ -19,8 +19,8 @@ class Blog extends Component {
   }
 
   componentDidMount() {
-    for (var index in this.props.blogposts.filename) {
-      fetch("/" + this.props.blogposts.filename[index]).then((response) => response.text())
+    for (var index in this.props.blogposts.posts) {
+      fetch("/" + this.props.blogposts.posts[index].filename).then((response) => response.text())
         .then(text => {
           this.setState({blogpost: this.state.blogpost.concat(
             <BlogPost text={text}/>

@@ -1,2 +1,16 @@
-{"filename":["./src/personalbrandapp/src/blogposts/aboutme.md",
-    "./src/personalbrandapp/src/blogposts/healthAndLifestyle.md"]}
+{
+    "posts":[
+        {
+            "filename":"./src/personalbrandapp/src/blogposts/aboutme.md"
+        },
+        {
+            "filename":"./src/personalbrandapp/src/blogposts/healthAndLifestyle.md"
+        },
+        {
+            "filename":"./src/personalbrandapp/src/blogposts/creativeEndeavors.md"
+        },
+        {
+            "filename":"./src/personalbrandapp/src/blogposts/selfImprovement.md"
+        }
+    ]
+}

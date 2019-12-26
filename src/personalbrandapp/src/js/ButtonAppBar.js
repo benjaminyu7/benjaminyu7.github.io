@@ -30,7 +30,7 @@ export default function ButtonAppBar() {
             </Link>
           </Typography>
           <Typography variant="h6" className={classes.title}>
-            About me
+            Blog
           </Typography>
         </Toolbar>
       </AppBar>
