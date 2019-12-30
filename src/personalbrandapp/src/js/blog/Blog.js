@@ -20,10 +20,11 @@ class Blog extends Component {
 
   componentDidMount() {
     for (var index in this.props.blogposts.posts) {
+      const date = this.props.blogposts.posts[index].date;
       fetch("/" + this.props.blogposts.posts[index].filename).then((response) => response.text())
         .then(text => {
           this.setState({blogpost: this.state.blogpost.concat(
-            <BlogPost text={text}/>
+            <BlogPost text={text} date={date}/>
           )})
         });
     }
