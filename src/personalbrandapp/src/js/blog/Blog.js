@@ -40,7 +40,7 @@ class Blog extends Component {
 }
 
 Blog.propTypes = {
-    blogposts: PropTypes.string.isRequired,
+    blogposts: PropTypes.object.isRequired,
 }
 
 export default withStyles(styles)(Blog);

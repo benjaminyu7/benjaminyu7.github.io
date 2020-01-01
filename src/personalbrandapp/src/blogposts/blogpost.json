@@ -4,14 +4,15 @@
             "filename":"./src/personalbrandapp/src/blogposts/aboutme.md"
         },
         {
+            "filename":"./src/personalbrandapp/src/blogposts/creativeEndeavors.md",
+            "date":"12/31/2019"
+        },
+        {
             "filename":"./src/personalbrandapp/src/blogposts/diversity.md",
             "date":"12/29/2019"
         },
         {
             "filename":"./src/personalbrandapp/src/blogposts/healthAndLifestyle.md"
-        },
-        {
-            "filename":"./src/personalbrandapp/src/blogposts/creativeEndeavors.md"
         },
         {
             "filename":"./src/personalbrandapp/src/blogposts/selfImprovement.md"
