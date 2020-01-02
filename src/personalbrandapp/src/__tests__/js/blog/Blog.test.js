@@ -6,18 +6,18 @@ import Blog, { Blog as UnstyledBlog} from '../../../js/blog/Blog';
 import { getByText } from '@testing-library/react';
 import BlogPost from '../../../js/blog/BlogPost';
 import { shallow } from 'enzyme';
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
- 
-Enzyme.configure({ adapter: new Adapter() });
 
 const BLOGPOST_TEXT = "##About Me";
+const BLOGPOST_TEXT_SECOND = "blogpost test second";
 const BLOGPOST_DATE = "1/1/2020";
 
 const BLOGPOSTS = {"posts":[
         {
             "filename":"../../../blogposts/aboutme.md"
-        }
+        }, 
+        {
+            "filename":"../../../blogposts/aboutme.md"
+        }, 
 ]};
 
 const BLOGPOSTS_DATES = {"posts":[
@@ -26,6 +26,20 @@ const BLOGPOSTS_DATES = {"posts":[
             "date": BLOGPOST_DATE
         }
 ]};
+
+beforeEach(() => {
+  fetch.resetMocks()
+})
+
+test('multiple posts are rendered in the right order', async () => {
+  fetch.mockResponses([BLOGPOST_TEXT],[BLOGPOST_TEXT_SECOND]);
+  const wrapper  = shallow(<Blog blogposts={BLOGPOSTS}/>);
+  const root = wrapper.find(UnstyledBlog).dive();
+  await waitUntil(() => root.state('blogpost').length === 2);
+
+  expect(root.state('blogpost')[0]).toEqual(<BlogPost text={BLOGPOST_TEXT} key={0} />);
+  expect(root.state('blogpost')[1]).toEqual(<BlogPost text={BLOGPOST_TEXT_SECOND} key={1} />);
+});
 
 
 test('renders blogpost date', async () => {

@@ -19,14 +19,14 @@ export class Blog extends Component {
   }
 
   componentDidMount() {
+    let blogposts = []
     for (var index in this.props.blogposts.posts) {
       const date = this.props.blogposts.posts[index].date;
       const thisIndex = index;
       fetch("/" + this.props.blogposts.posts[index].filename).then((response) => response.text())
         .then(text => {
-          this.setState({blogpost: this.state.blogpost.concat(
-            <BlogPost text={text} date={date} key={thisIndex}/>
-          )})
+          blogposts[thisIndex] = (<BlogPost text={text} date={date} key={thisIndex}/>)
+          this.setState({blogpost: blogposts}); 
         });
     }
   }
