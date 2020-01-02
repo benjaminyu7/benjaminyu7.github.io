@@ -8,14 +8,16 @@ const BLOG_DATE = "date";
 
 test('renders blogpost text', () => {
   const { getByText } = render(<BlogPost text={BLOG_TEXT}/>);
-  const linkElement = getByText(/blog/i);
-  expect(linkElement).toBeInTheDocument();
+  const blogpostText = getByText(/blog/i);
+  expect(blogpostText).toBeInTheDocument();
 });
 
 test('renders blogpost date', () => {
   const { getByText } = render(<BlogPost text={BLOG_TEXT} date={BLOG_DATE}/>);
-  const linkElement = getByText(/date/i);
-  expect(linkElement).toBeInTheDocument();
+  const blogpostDate = getByText(/date/i);
+  expect(blogpostDate).toBeInTheDocument();
+  const blogpostText = getByText(/blog/i);
+  expect(blogpostText).toBeInTheDocument();
 });
 
 it('renders without crashing', () => {

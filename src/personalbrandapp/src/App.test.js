@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders appBar', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/Blog/i);
-  expect(linkElement).toBeInTheDocument();
+  const appBarElement = getByText(/Blog/i);
+  expect(appBarElement).toBeInTheDocument();
 });
 
-it('renders without crashing', () => {
+it('renders app without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<App />, div);
 });
