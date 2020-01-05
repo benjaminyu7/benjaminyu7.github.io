@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ced2a844c0e0aaf68391359db1c9a4fd",
+    "revision": "efdcbd347e5838aa443586c5e90bd3b0",
     "url": "/personalbrandapp/index.html"
   },
   {
-    "revision": "9b1676ee313488ce910a",
+    "revision": "dfd8eb68ad87edd93d36",
     "url": "/personalbrandapp/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personalbrandapp/static/js/2.83f21649.chunk.js.LICENSE"
   },
   {
-    "revision": "9b1676ee313488ce910a",
-    "url": "/personalbrandapp/static/js/main.81039a98.chunk.js"
+    "revision": "dfd8eb68ad87edd93d36",
+    "url": "/personalbrandapp/static/js/main.b8fb7562.chunk.js"
   },
   {
     "revision": "07cc0cbe642840b3c2b8",

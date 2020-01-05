@@ -4,6 +4,10 @@
             "filename":"./src/personalbrandapp/src/blogposts/aboutme.md"
         },
         {
+            "filename":"./src/personalbrandapp/src/blogposts/newYears2020.md",
+            "date":"1/4/2020"
+        },
+        {
             "filename":"./src/personalbrandapp/src/blogposts/creativeEndeavors.md",
             "date":"12/31/2019"
         },

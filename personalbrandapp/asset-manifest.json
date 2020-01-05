@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/personalbrandapp/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/personalbrandapp/static/js/main.81039a98.chunk.js",
-    "main.js.map": "/personalbrandapp/static/js/main.81039a98.chunk.js.map",
+    "main.js": "/personalbrandapp/static/js/main.b8fb7562.chunk.js",
+    "main.js.map": "/personalbrandapp/static/js/main.b8fb7562.chunk.js.map",
     "runtime-main.js": "/personalbrandapp/static/js/runtime-main.1bd4406f.js",
     "runtime-main.js.map": "/personalbrandapp/static/js/runtime-main.1bd4406f.js.map",
     "static/js/2.83f21649.chunk.js": "/personalbrandapp/static/js/2.83f21649.chunk.js",
     "static/js/2.83f21649.chunk.js.map": "/personalbrandapp/static/js/2.83f21649.chunk.js.map",
     "index.html": "/personalbrandapp/index.html",
-    "precache-manifest.293c94dbfa24da1c7427119389c26d77.js": "/personalbrandapp/precache-manifest.293c94dbfa24da1c7427119389c26d77.js",
+    "precache-manifest.128cac60067336ae6cbf934b3b3a0f80.js": "/personalbrandapp/precache-manifest.128cac60067336ae6cbf934b3b3a0f80.js",
     "service-worker.js": "/personalbrandapp/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/personalbrandapp/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.83f21649.chunk.js.LICENSE": "/personalbrandapp/static/js/2.83f21649.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1bd4406f.js",
     "static/js/2.83f21649.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.81039a98.chunk.js"
+    "static/js/main.b8fb7562.chunk.js"
   ]
 }
