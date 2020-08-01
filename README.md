@@ -1,6 +1,8 @@
 This is my personal website 
 
-to run the server src/personalbrandapp/src/build.sh 
+to run the server  
+cd src/personalbrandapp/
+./build.sh 
 
 TODO:
 -Refactor code to enable globalization
