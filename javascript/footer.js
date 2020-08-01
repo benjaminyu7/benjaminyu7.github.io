@@ -21,9 +21,10 @@ let footer_func = function () {
 	mailto_link.setAttribute('href','mailto:benjaminyu.741@gmail.com');
 	mailto.appendChild(mailto_link);
 	links.appendChild(mailto);
-	make_footer_link(links, 'Resume', './documents/BenjaminYuResume.pdf');
-	make_footer_link(links, 'LinkedIn', 'https://www.linkedin.com/in/benjamin-yu-98592096/');
+	make_footer_link(links,'Resume','./documents/BenjaminYuResume.pdf');
+	make_footer_link(links,'LinkedIn','https://www.linkedin.com/in/benjamin-yu-98592096/');
 	make_footer_link(links,'GitHub','https://github.com/benjaminyu7');
+	make_footer_link(links,'YouTube','https://www.youtube.com/channel/UCzChIC0sJ0SZw6nETDi35oA');
 	footer.appendChild(links);
 	placement.appendChild(footer);
 };
