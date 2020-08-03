@@ -1,13 +1,16 @@
 {
-    "biography": "I am a Software Development Engineer at Amazon and work making on enabling purchases using HSA and FSA cards on Amazon.com. I received my Bachelor of Science in Computer Science from Stony Brook University, New York in May of 2019",
+    "biography": "I am a Software Development Engineer at Amazon and develop backend services for the PillPack organization. I received my Bachelor of Science in Computer Science from Stony Brook University, New York in May of 2019",
     "workExperiences": [
         {
             "title":"Software Development Engineer",
-            "location":"Amazon - Consumer Organization",
+            "location":"Amazon - PillPack",
             "dates":"June 2019 - Present",
-            "tasks": ["Develop service to inform customers of healthcare payment options in Java to create consistency in information displayed on the retail site",
-                "Create environment and deploy service using proprietary cloud management software"], 
-            "technologies": ["Bash","Java","Redhat Linux","Agile Development"]
+            "tasks": [
+                "Create serverless orchestrator for replacement orders and notifications.",
+                "Create, configure and deploy service with continuous integration to onboard with the service of a partner team",
+                "Develop service to inform customers of healthcare payment options in Java to create consistency in information displayed on the retail site and AB tested to ensure positive customer experience"
+            ], 
+            "technologies": [ "AWS", "Step Functions", "Lambda", "EC2", "Cloudformation", "Java","Agile Development"]
         },
         {
             "title":"High Performance Computing Engineer", 

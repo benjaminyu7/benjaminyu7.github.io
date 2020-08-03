@@ -25,7 +25,12 @@ div.ResumeItem {
 	font-size: 18px;
 }
 .ResumeSkills li{
-	margin:5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
 	display: inline;
-	font-size: 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #DEB887;
 }
