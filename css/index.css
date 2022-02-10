@@ -13,7 +13,7 @@ body {
 div#Content {
 	display:flex;
 	flex-direction: column;
-	background: #c6ebc6;
+	background: #629460;
 }
 p#bio {
 	margin:10px;

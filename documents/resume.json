@@ -1,9 +1,9 @@
 {
-    "biography": "I am a Software Development Engineer at Amazon and develop backend services for the PillPack organization. I received my Bachelor of Science in Computer Science from Stony Brook University, New York in May of 2019",
+    "biography": "I am a Software Development Engineer at Amazon and develop fullstack services for Amazon Pharmacy. I received my Bachelor of Science in Computer Science from Stony Brook University, New York in May of 2019",
     "workExperiences": [
         {
             "title":"Software Development Engineer",
-            "location":"Amazon - PillPack",
+            "location":"Amazon Pharmacy",
             "dates":"June 2019 - Present",
             "tasks": [
                 "Create serverless orchestrator for replacement orders and notifications.",
