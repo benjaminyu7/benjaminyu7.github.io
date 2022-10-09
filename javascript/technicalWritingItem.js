@@ -10,9 +10,8 @@ let make_writing_item = function (imageSrc, titleTxt, descriptionTxt, linkDoc) {
 		width: 760px; \
 		align-self: center; \
 		padding-left: 20px; \
-		background: white; \
 		border-radius: 240px; \
-		background: #FFF8EF;');
+		background: #E5F4E3;');
 
 	let image = document.createElement('img');
 	image.setAttribute('src',imageSrc);
@@ -35,7 +34,7 @@ let make_writing_item = function (imageSrc, titleTxt, descriptionTxt, linkDoc) {
 		'margin-left: 30px; \
 		align-self: center; \
 		width: 450px; \
-		color: black');
+		color: 292F36');
 	text.appendChild(title);
 	text.appendChild(description);
 

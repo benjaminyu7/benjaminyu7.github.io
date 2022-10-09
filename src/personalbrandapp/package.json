@@ -38,5 +38,9 @@
   "devDependencies": {
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2"
-  }
+  },
+  "main": "service-worker.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

@@ -10,8 +10,8 @@ import { withStyles } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
   palette: {
-    primary: { main: '#c6ebc6' }, //light green
-    secondary: { main: '#FFF8EF' }, //tan
+    primary: { main: '#292F36' }, //gunmetal
+    secondary: { main: '#629460' }, //russian green
     type: 'light',
   },
   typography: { useNextVariants: true },
@@ -23,7 +23,7 @@ const styles = theme => ({
     paddingTop: theme.spacing(10),
   },
   background: {
-    backgroundColor: '#FFF8EF',
+    backgroundColor: '#629460', //russian green
     minHeight: '100vh',
     padding: theme.spacing(3),
   }

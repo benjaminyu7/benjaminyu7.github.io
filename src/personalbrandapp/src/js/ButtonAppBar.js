@@ -24,12 +24,12 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="fixed">
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" className={classes.title} style={{ color: "#DDA15E" }}>
             <Link href="/"  color="inherit">
               Benjamin Yu
             </Link>
           </Typography>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" className={classes.title} style={{ color: "#A78A7F" }}>
             Blog
           </Typography>
         </Toolbar>

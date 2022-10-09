@@ -1,10 +1,21 @@
 {
-    "biography": "I am a Software Development Engineer at Amazon and develop fullstack services for Amazon Pharmacy. I received my Bachelor of Science in Computer Science from Stony Brook University, New York in May of 2019",
+    "biography": "I am a Software Developer at Microsoft and develop backend services for Azure DNS. I received my Bachelor of Science in Computer Science from Stony Brook University, New York in May of 2019",
     "workExperiences": [
+        {
+            "title":"Software Developer",
+            "location":"Microsoft Azure DNS",
+            "dates":"February 2022 - Present",
+            "tasks": [
+                "Develop new Azure DNS features and deploy changes to Production servers in hundreds of servers accross 25 global regions",
+                "Automated validation of production builds using: Functional Testing, Stress testing and Automated Azure Resource creation",
+                "Mitigate and resolve external customer concerns with Azure DNS SLA"
+            ], 
+            "technologies": [ "Azure", "C#", "Powershell", ".NET" ]
+        },
         {
             "title":"Software Development Engineer",
             "location":"Amazon Pharmacy",
-            "dates":"June 2019 - Present",
+            "dates":"June 2019 - February 2022",
             "tasks": [
                 "Create serverless orchestrator for replacement orders and notifications.",
                 "Create, configure and deploy service with continuous integration to onboard with the service of a partner team",
