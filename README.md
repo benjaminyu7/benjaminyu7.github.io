@@ -16,3 +16,6 @@ sudo apt install npm
 # restart terminal
 cd src/personalbrandapp/
 npm install
+
+# Running React Development server
+npm start
