@@ -5,8 +5,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 
 
-const styles = theme => ({
-});
+const styles = theme => ({ });
 
 /*
 * @blogposts the filename of the blogpost
@@ -43,7 +42,5 @@ export class Blog extends Component {
 Blog.propTypes = {
     blogposts: PropTypes.object.isRequired,
 }
-
-
 
 export default withStyles(styles)(Blog);
