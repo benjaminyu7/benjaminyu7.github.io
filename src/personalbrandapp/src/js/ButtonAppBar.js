@@ -6,9 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-  },
   menuButton: {
     marginRight: theme.spacing(2),
   },
@@ -17,21 +14,27 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar(props) {
   const classes = useStyles();
+  
+  const links = props.links;
 
   return (
     <div className={classes.root}>
       <AppBar position="fixed">
         <Toolbar>
-          <Typography variant="h6" className={classes.title} style={{ color: "#DDA15E" }}>
-            <Link href="/"  color="inherit">
-              Benjamin Yu
+          <Typography variant="h6" className={classes.menuButton} style={{ color: "#DDA15E" }}>
+            <Link href={"/"} color="inherit">
+              {"Benjamin Yu"}
             </Link>
           </Typography>
-          <Typography variant="h6" className={classes.title} style={{ color: "#A78A7F" }}>
-            Blog
-          </Typography>
+          {links.map((link) => (
+            <Typography variant="h6" className={classes.menuButton} style={{ color: "#A78A7F" }}>
+              <Link href={link.href} color="inherit">
+                {link.name}
+              </Link>
+            </Typography>
+          ))}
         </Toolbar>
       </AppBar>
     </div>

@@ -38,11 +38,15 @@ class App extends Component {
 
   render() {
     const { classes } = this.props;
+    let links = [
+      { name: 'Technical Communication', href: '/technicalWriting.html' },
+      { name: 'Blog', href: '/personalbrandapp' },
+    ];
 
     return (
       <div className={classes.background}>
         <MuiThemeProvider theme={theme}>
-          <ButtonAppBar />
+          <ButtonAppBar links={links} />
           <div className={classes.headerSpace}/>
           <Container>
             <Grid item  xs={12} md={12}>

@@ -9,7 +9,7 @@ let header_funct = function () {
 	technicalWriting.setAttribute('href','technicalWriting.html');
 
 	let personalBrandApp = document.createElement('a');
-	personalBrandApp.textContent='About Me';
+	personalBrandApp.textContent='Blog';
 	personalBrandApp.setAttribute('href','personalbrandapp');
 
 	let header = document.getElementById('header');
