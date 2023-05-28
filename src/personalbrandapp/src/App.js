@@ -3,7 +3,7 @@ import Blog from './js/blog/Blog';
 import ButtonAppBar from './js/ButtonAppBar';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import BLOGPOST from './blogposts/blogpost.json';
 import { withStyles } from '@material-ui/core/styles';
 import AboutMePage from './js/page/AboutMePage'
@@ -49,7 +49,7 @@ class App extends Component {
 
     return (
       <div className={classes.background}>
-        <MuiThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}>
           <Router>
             <ButtonAppBar links={links} />
             <div className={classes.headerSpace}/>
@@ -64,7 +64,7 @@ class App extends Component {
               </Route>
             </Routes>
           </Router>
-        </MuiThemeProvider>
+        </ThemeProvider>
       </div>
     );
   }
