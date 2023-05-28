@@ -7,7 +7,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import BLOGPOST from './blogposts/blogpost.json';
 import { withStyles } from '@material-ui/core/styles';
 import AboutMePage from './js/page/AboutMePage'
-
+import { Navigate, Outlet, HashRouter as Router, Routes, Route } from "react-router-dom";
 
 const theme = createMuiTheme({
   palette: {
@@ -49,24 +49,27 @@ class App extends Component {
     const { classes } = this.props;
     let links = [
       { name: 'Technical Communication', href: '/technicalWriting.html' },
-      { name: 'Blog', href: '/personalbrandapp' },
+      { name: 'Blog', href: '#/blog' },
+      { name: 'Contact Me', href: '#/contact' },
     ];
 
     return (
       <div className={classes.background}>
         <MuiThemeProvider theme={theme}>
-          <ButtonAppBar links={links} updatePage = {this.changePage}/>
-          <div className={classes.headerSpace}/>
-
-        {this.state.page === 'blog' && 
-          <Container>
-            <Grid item  xs={12} md={12}>
-              <Blog blogposts={BLOGPOST} />
-            </Grid>
-          </Container>
-        }
-        {this.state.page === 'about' && <AboutMePage/>}
-          
+          <Router>
+            <ButtonAppBar links={links} updatePage = {this.changePage}/>
+            <div className={classes.headerSpace}/>
+            <Routes>
+              <Route path = "/" component = { <> <Outlet/> </> }>
+                <Route path="blog" element={<Container>
+                  <Grid item  xs={12} md={12}>
+                    <Blog blogposts={BLOGPOST} />
+                  </Grid>
+                </Container>} />
+                <Route path="contact" element={<AboutMePage/>} />
+              </Route>
+            </Routes>
+          </Router>
         </MuiThemeProvider>
       </div>
     );

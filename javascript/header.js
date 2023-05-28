@@ -1,19 +1,21 @@
 let header_funct = function () {
+	let header = document.getElementById('header');
 	let nameLink = document.createElement('a');
 	nameLink.textContent="Benjamin Yu";
 	nameLink.setAttribute('href','index.html');
 	nameLink.setAttribute('id','name');
-
-	let technicalWriting = document.createElement('a');
-	technicalWriting.textContent='Technical Communication';
-	technicalWriting.setAttribute('href','technicalWriting.html');
-
-	let personalBrandApp = document.createElement('a');
-	personalBrandApp.textContent='Blog';
-	personalBrandApp.setAttribute('href','personalbrandapp');
-
-	let header = document.getElementById('header');
 	header.appendChild(nameLink);
-	header.appendChild(technicalWriting);
-	header.appendChild(personalBrandApp);
+
+	let links = [
+		{link: 'technicalWriting.html', text: 'Technical Communication'},
+		{link: '/personalbrandapp/#/blog', text: 'Blog'},
+		{link: '/personalbrandapp/#/contact', text: 'Contact Me'}
+	]
+	links.map((link)=> {
+			let linkElement = document.createElement('a');
+			linkElement.textContent=link.text;
+			linkElement.setAttribute('href',link.link);
+			header.appendChild(linkElement);
+		}
+	)
 };
