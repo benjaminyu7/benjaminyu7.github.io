@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/personalbrandapp/static/css/main.e6c13ad2.css",
-    "main.js": "/personalbrandapp/static/js/main.16abefde.js",
+    "main.js": "/personalbrandapp/static/js/main.0d705acd.js",
     "index.html": "/personalbrandapp/index.html",
     "main.e6c13ad2.css.map": "/personalbrandapp/static/css/main.e6c13ad2.css.map",
-    "main.16abefde.js.map": "/personalbrandapp/static/js/main.16abefde.js.map"
+    "main.0d705acd.js.map": "/personalbrandapp/static/js/main.0d705acd.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.16abefde.js"
+    "static/js/main.0d705acd.js"
   ]
 }

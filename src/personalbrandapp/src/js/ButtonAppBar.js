@@ -38,7 +38,7 @@ export default function ButtonAppBar(props) {
           ))}
           <Typography variant="h6" className={classes.menuButton} style={{ color: "#A78A7F" }} >
             <Link href={"#"} onClick={() => changePage('about')} color="inherit">
-                {"About Me"}
+                {"Contact Me"}
             </Link>
           </Typography>
         </Toolbar>
