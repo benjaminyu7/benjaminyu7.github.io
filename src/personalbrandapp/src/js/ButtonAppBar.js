@@ -16,9 +16,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function ButtonAppBar(props) {
   const classes = useStyles();
-  
   const links = props.links;
-  const changePage = props.updatePage;
 
   return (
     <div className={classes.root}>

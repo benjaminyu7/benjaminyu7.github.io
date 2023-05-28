@@ -7,7 +7,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import BLOGPOST from './blogposts/blogpost.json';
 import { withStyles } from '@material-ui/core/styles';
 import AboutMePage from './js/page/AboutMePage'
-import { Navigate, Outlet, HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Outlet, HashRouter as Router, Routes, Route } from "react-router-dom";
 
 const theme = createMuiTheme({
   palette: {
@@ -39,12 +39,6 @@ class App extends Component {
     }
   }
 
-  changePage = (newPage) => {
-    this.setState({
-      page: newPage
-    });
-  };
-
   render() {
     const { classes } = this.props;
     let links = [
@@ -57,7 +51,7 @@ class App extends Component {
       <div className={classes.background}>
         <MuiThemeProvider theme={theme}>
           <Router>
-            <ButtonAppBar links={links} updatePage = {this.changePage}/>
+            <ButtonAppBar links={links} />
             <div className={classes.headerSpace}/>
             <Routes>
               <Route path = "/" component = { <> <Outlet/> </> }>
