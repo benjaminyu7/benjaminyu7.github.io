@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import BLOGPOST from './blogposts/blogpost.json';
 import { withStyles } from '@material-ui/core/styles';
+import AboutMePage from './js/page/AboutMePage'
 
 
 const theme = createMuiTheme({
@@ -31,10 +32,18 @@ const styles = theme => ({
 
 class App extends Component {
 
-
   constructor(props) {
     super(props);
+    this.state = {
+      page: "blog"
+    }
   }
+
+  changePage = (newPage) => {
+    this.setState({
+      page: newPage
+    });
+  };
 
   render() {
     const { classes } = this.props;
@@ -46,13 +55,18 @@ class App extends Component {
     return (
       <div className={classes.background}>
         <MuiThemeProvider theme={theme}>
-          <ButtonAppBar links={links} />
+          <ButtonAppBar links={links} updatePage = {this.changePage}/>
           <div className={classes.headerSpace}/>
+
+        {this.state.page === 'blog' && 
           <Container>
             <Grid item  xs={12} md={12}>
               <Blog blogposts={BLOGPOST} />
             </Grid>
           </Container>
+        }
+        {this.state.page === 'about' && <AboutMePage/>}
+          
         </MuiThemeProvider>
       </div>
     );
