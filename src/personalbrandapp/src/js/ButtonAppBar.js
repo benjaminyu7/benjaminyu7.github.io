@@ -16,9 +16,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function ButtonAppBar(props) {
   const classes = useStyles();
-  
   const links = props.links;
-  const changePage = props.updatePage;
 
   return (
     <div className={classes.root}>
@@ -36,11 +34,6 @@ export default function ButtonAppBar(props) {
               </Link>
             </Typography>
           ))}
-          <Typography variant="h6" className={classes.menuButton} style={{ color: "#A78A7F" }} >
-            <Link href={"#"} onClick={() => changePage('about')} color="inherit">
-                {"Contact Me"}
-            </Link>
-          </Typography>
         </Toolbar>
       </AppBar>
     </div>
