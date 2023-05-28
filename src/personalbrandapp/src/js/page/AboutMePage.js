@@ -3,9 +3,6 @@ import Link from '@material-ui/core/Link';
 import { Card, CardMedia, Grid } from '@material-ui/core'
 
 function AboutMePage() {
-	/* mailto_link.setAttribute('href','');
-	make_footer_link(links,'Resume','');
-  */
   let links = [
     {link: "mailto:benjaminyu.741@gmail.com", image: "/images/emailLogo.png", alt: "mail" },
     {link: "../documents/BenjaminYuResume.pdf", image: "/images/resumeLogo.png", alt: "resume" },
@@ -17,8 +14,6 @@ function AboutMePage() {
     <div>
         <Grid container spacing={2} justifyContent="center">
             {
-
-
                 links.map((link)=> (
                 <Grid item>
                     <Link href={link.link} target="_blank">
