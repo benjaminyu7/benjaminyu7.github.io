@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-
 import BlogPost from './BlogPost';
 import PropTypes from 'prop-types';
 import { withStyles } from '@mui/styles';
-
+import { getPost, getPosts } from './WordPressProxy'
 
 const styles = theme => ({ });
 
@@ -17,7 +16,16 @@ export class Blog extends Component {
     this.state = { blogpost: []};
   }
 
-  componentDidMount() {
+  updateDropdown(dropdownJson) {
+    let dropdownList = []
+    console.log(dropdownJson)
+    dropdownJson.posts.forEach(item => {
+      dropdownList.push(<h1>{item.title}</h1>)
+    })
+    this.setState({dropdown: dropdownList})
+  }
+
+  async componentDidMount() {
     let blogposts = []
     for (var index in this.props.blogposts.posts) {
       const date = this.props.blogposts.posts[index].date;
@@ -28,12 +36,17 @@ export class Blog extends Component {
           this.setState({blogpost: blogposts}); 
         });
     }
+    this.updateDropdown(await getPosts())
+    let post = await getPost(3)
+    this.setState({post: ( <div dangerouslySetInnerHTML={{ __html: post.content }} />)})
   }
 
   render() {
     const { classes } = this.props;
     return ( 
       <div>
+        {this.state.dropdown}
+        {this.state.post}
         {this.state.blogpost}
       </div>);
   }
