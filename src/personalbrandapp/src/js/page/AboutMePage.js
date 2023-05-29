@@ -1,6 +1,6 @@
 import React from 'react';
-import Link from '@material-ui/core/Link';
-import { Card, CardMedia, Grid } from '@material-ui/core'
+import Link from '@mui/material/Link';
+import { Card, CardMedia, Grid } from '@mui/material'
 
 function AboutMePage() {
   let links = [

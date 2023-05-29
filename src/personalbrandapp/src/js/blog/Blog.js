@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import BlogPost from './BlogPost';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@mui/styles';
 
 
 const styles = theme => ({ });
