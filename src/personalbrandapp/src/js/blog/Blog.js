@@ -1,53 +1,100 @@
 import React, {Component} from 'react';
-import BlogPost from './BlogPost';
 import PropTypes from 'prop-types';
-import { withStyles } from '@mui/styles';
+import { withStyles, makeStyles } from '@mui/styles';
 import { getPost, getPosts } from './WordPressProxy'
+import MarkdownBlog from './MarkdownBlog'
+import { ListItemButton as Button } from '@mui/material';
+import Drawer from '@mui/material/Drawer';
+import Box from '@mui/material/Box';
+import clsx from 'clsx';
+import Card from '@mui/material/Card';
 
-const styles = theme => ({ });
+const styles = makeStyles((theme) => ({
+    button: {
+      backgroundColor: theme.palette.primary,
+      color: theme.palette.primary,
+    },
+    drawer: {
+      backgroundColor: '#629460',
+      color: '#629460',
+    }
+}));
+
+
+const drawerWidth = 300;
 
 /*
 * @blogposts the filename of the blogpost
 */
-export class Blog extends Component {
+class Blog extends Component {
 
   constructor(props) {
     super(props);
     this.state = { blogpost: []};
+    this.classes = this.props;
+  }
+
+  async openPost(postId) {
+    let post = await getPost(postId)
+    this.updatePost(post.content)
+  }
+
+  openDeprecatedBlog() {
+      this.setState({post: (<MarkdownBlog blogposts={this.props.blogposts} />)})
   }
 
   updateDropdown(dropdownJson) {
     let dropdownList = []
-    console.log(dropdownJson)
     dropdownJson.posts.forEach(item => {
-      dropdownList.push(<h1>{item.title}</h1>)
+      dropdownList.push(<Button  variant="contained" onClick={() => this.openPost(item.ID)}>
+        {item.title}
+      </Button>)
     })
+    dropdownList.push(<Button variant="contained" onClick={() => this.openDeprecatedBlog()}>
+      {'Deprecated Blogposts'}
+    </Button>)
     this.setState({dropdown: dropdownList})
+  }
+  
+  updatePost(content) {
+    this.setState({post: ( <div style={{backgroundColor:'#E5F4E3', width: '100', padding:20, objectFit: 'contain', overflow: 'hidden'}} dangerouslySetInnerHTML={{ __html: content }} />)})
   }
 
   async componentDidMount() {
-    let blogposts = []
-    for (var index in this.props.blogposts.posts) {
-      const date = this.props.blogposts.posts[index].date;
-      const thisIndex = index;
-      fetch("/" + this.props.blogposts.posts[index].filename).then((response) => response.text())
-        .then(text => {
-          blogposts[thisIndex] = (<BlogPost text={text} date={date} key={thisIndex}/>)
-          this.setState({blogpost: blogposts}); 
-        });
-    }
-    this.updateDropdown(await getPosts())
-    let post = await getPost(3)
-    this.setState({post: ( <div dangerouslySetInnerHTML={{ __html: post.content }} />)})
+    let posts = await getPosts()
+    this.updateDropdown(posts)
+    this.openDeprecatedBlog()
   }
 
   render() {
     const { classes } = this.props;
     return ( 
       <div>
-        {this.state.dropdown}
-        {this.state.post}
-        {this.state.blogpost}
+        <Drawer
+          className={clsx(classes.drawer)}
+          sx={{
+            width: drawerWidth,
+            flexShrink: 0,
+            '& .MuiDrawer-paper': {
+              width: drawerWidth,
+              boxSizing: 'border-box',
+              backgroundColor: '#292F36',
+              color: '#A78A7F',
+            },
+          }}
+          variant="permanent"
+          anchor="right"
+        >
+          <div style={{ display: 'flex', flexDirection: 'column'}}>
+            {this.state.dropdown}
+          </div>
+        </Drawer>
+        <Box sx={{ width: { sm: `calc(100% - ${drawerWidth}px)` } }}>
+          <Card style={{backgroundColor:'#E5F4E3', padding:20, objectFit: 'contain', overflow: 'hidden'}}>
+
+              {this.state.post}
+          </Card>
+        </Box>
       </div>);
   }
 }

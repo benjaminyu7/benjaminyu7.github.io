@@ -43,13 +43,13 @@ class PersonalBrandApp extends Component {
             <ButtonAppBar links={links} />
             <div className={classes.headerSpace}/>
             <Routes>
-                <Route path = "/" component = { <> <Outlet/> </> }>
-                <Route path="blog" element={<Container>
-                    <Grid item  xs={12} md={12}>
-                    <Blog blogposts={BLOGPOST} />
-                    </Grid>
-                </Container>} />
-                <Route path="contact" element={<AboutMePage/>} />
+                <Route path = "/" component = { <><Outlet/></> }>
+                    <Route path="blog" element={<Container>
+                        <Grid item  xs={12} md={12}>
+                            <Blog blogposts={BLOGPOST} />
+                        </Grid>
+                    </Container>} />
+                    <Route path="contact" element={<AboutMePage/>} />
                 </Route>
             </Routes>
         </Router>

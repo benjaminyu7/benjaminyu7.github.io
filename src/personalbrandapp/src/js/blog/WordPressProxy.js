@@ -4,6 +4,6 @@ export async function getPosts() {
 }
 
 export async function getPost(id) {
-    return await fetch('https://public-api.wordpress.com/rest/v1.1/sites/dragon246rider.wordpress.com/posts/' + id)
+    return await fetch('https://public-api.wordpress.com/rest/v1.1/sites/dragon246rider.wordpress.com/posts/' + id + '?fields=title,content')
         .then(response => response.json())
 }
