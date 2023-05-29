@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
-import Card from '@material-ui/core/Card';
+import Card from '@mui/material/Card';
 import Markdown from '../Markdown';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@mui/styles';
 
 const styles = theme => ({
   card: {
