@@ -9,18 +9,7 @@ import Box from '@mui/material/Box';
 import clsx from 'clsx';
 import Card from '@mui/material/Card';
 
-const styles = makeStyles((theme) => ({
-    button: {
-      backgroundColor: theme.palette.primary,
-      color: theme.palette.primary,
-    },
-    drawer: {
-      backgroundColor: '#629460',
-      color: '#629460',
-    }
-}));
-
-
+const styles = theme => ({ });
 const drawerWidth = 300;
 
 /*
@@ -36,11 +25,16 @@ class Blog extends Component {
 
   async openPost(postId) {
     let post = await getPost(postId)
-    this.updatePost(post.content)
+    this.updatePost(post.title, post.content)
+  }
+
+  updatePost(title, content) {
+    this.setState({post: (<><h1>{title}</h1><div style={{backgroundColor:'#E5F4E3', width: '100', padding:20, objectFit: 'contain', overflow: 'hidden'}} 
+                               dangerouslySetInnerHTML={{ __html: content }} /></>)})
   }
 
   openDeprecatedBlog() {
-      this.setState({post: (<MarkdownBlog blogposts={this.props.blogposts} />)})
+      this.setState({post: (<><h1>Archive</h1><MarkdownBlog blogposts={this.props.blogposts} /></>)})
   }
 
   updateDropdown(dropdownJson) {
@@ -51,13 +45,9 @@ class Blog extends Component {
       </Button>)
     })
     dropdownList.push(<Button variant="contained" onClick={() => this.openDeprecatedBlog()}>
-      {'Deprecated Blogposts'}
+      {'Archive'}
     </Button>)
     this.setState({dropdown: dropdownList})
-  }
-  
-  updatePost(content) {
-    this.setState({post: ( <div style={{backgroundColor:'#E5F4E3', width: '100', padding:20, objectFit: 'contain', overflow: 'hidden'}} dangerouslySetInnerHTML={{ __html: content }} />)})
   }
 
   async componentDidMount() {
@@ -91,11 +81,11 @@ class Blog extends Component {
         </Drawer>
         <Box sx={{ width: { sm: `calc(100% - ${drawerWidth}px)` } }}>
           <Card style={{backgroundColor:'#E5F4E3', padding:20, objectFit: 'contain', overflow: 'hidden'}}>
-
               {this.state.post}
           </Card>
         </Box>
-      </div>);
+      </div>
+    );
   }
 }
 
