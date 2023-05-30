@@ -4,9 +4,10 @@ I generally take a long term approach to how I make decisions in my everyday lif
 
 ### Print Media
 
-I try to read a plethora of self improvement books and biographies from authors with a variety of backgrounds to find diverse thoughts on how one can improve. 
-- "Atomic Habits" by James Clear is a more traditional self help book that I find very practical in terms of actions you may take to develop great habits for self improvement. It definitely has cascading benefits due to the fundamental nature of habit and how they shape you as a person. 
-- "Secrets of Six Figure Women" by Barbara Stanny provides many interesting insights in how women overcome barriers to generate larger income for themselves. It really gives a diverse view of high income women from multiple industries and backgrounds, and as a result, one may find specific advice that may resonate with you. 
+I try to read a plethora of self improvement books and biographies from authors with a variety of backgrounds to find diverse thoughts on how one can improve.
+
+- "Atomic Habits" by James Clear is a more traditional self help book that I find very practical in terms of actions you may take to develop great habits for self improvement. It definitely has cascading benefits due to the fundamental nature of habit and how they shape you as a person.
+- "Secrets of Six Figure Women" by Barbara Stanny provides many interesting insights in how women overcome barriers to generate larger income for themselves. It really gives a diverse view of high income women from multiple industries and backgrounds, and as a result, one may find specific advice that may resonate with you.
 - "Tools of Titans" by Tim Ferriss, is a collection of many great profiles of successful persons in all kinds of fields and industries. It's practically an encyclopedia of diverse perspectives on success and I expect that it'll have a lot of reread value, as a result.
 
 ### Audio Media

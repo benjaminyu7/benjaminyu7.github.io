@@ -11,19 +11,17 @@ To create great projects, I believe that it's important to add a personal flair.
 Roses are red,  
 Violets are blue,  
 Can't you see that,  
-I miss you!  
+I miss you!
 
-I can just imagine the sing song rhythm of all "roses are red" poems, which is good enough. But boring! By putting pauses in different parts of the poem, I was able to change the mood in it's recital. 
+I can just imagine the sing song rhythm of all "roses are red" poems, which is good enough. But boring! By putting pauses in different parts of the poem, I was able to change the mood in it's recital.
 
 Roses, are red,  
 Violets, are blue,  
-Can't you see,   
-that I miss you!  
+Can't you see,  
+that I miss you!
 
-This recital has a heavier mood that the previous, despite having the same exact words. I just loved to mix and match different experiences together in grand experimentation to see what can be created! 
+This recital has a heavier mood that the previous, despite having the same exact words. I just loved to mix and match different experiences together in grand experimentation to see what can be created!
 
 Before one such experimentation, I looked to the many categories of film on YouTube, and I was a big fan of a fair number of them. I was really quite curious to why many of them really stuck to one category and rarely ventured in style. As a viewer, I enjoyed all of these categories and wondered: what if you brought all these different elements into a single film? Creating this took a longer development process, which involved much criticism from my viewers. At its core, the films I were making were lets plays, which incorporated popular vlogging elements, and many gamers were not interested any of them! They wanted cleanly cut gameplay with commentary. However, I had a vision of what I wanted to create, which was difficult to follow since those kinds of films generally did not exist. While perfecting the process of producing the videos, I found myself really engaged with the films I was making even through the first cuts. It was really nice to start a montage with music to bring you in, cuttint to the creator roaming around talking about games, then diving into the gameplay with highlighted great plays and reactions, transitioning between games with time lapses and finally cutting back to the creator roaming around while concluding the video. It looked like a lot of viewers were engaged with this style of video as well and gave a lot of feedback in appreciating the unique elements into their regular lets play video. Most of all, I was really proud of creating these films which were enjoyed by others because it showed that I had made somewhat of an impact on the audience through producing great unique films.
 
-
 Popular or not, my work is very much infused with my creativity. I find creativity to be meaningful to me in two ways. First, it enables me to utilize existing resources to it's greatest potential to overcome obstacles in completing my goals. Next, it's a way to set your stake in the world in a way to make it yours. As a result, I believe that creativity is an integral part of who I am in the hopes to bring the world forward, in part, by me.
-

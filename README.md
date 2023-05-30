@@ -19,3 +19,6 @@ npm install
 
 # Running React Development server
 npm start
+
+# Formatting
+npx prettier --write .
