@@ -18,7 +18,7 @@ let footer_func = function () {
 	let mailto_link = document.createElement('a');
 	footer.setAttribute('id', 'footer');
 	mailto_link.textContent="Email";
-	mailto_link.setAttribute('href','mailto:benjaminyu.741@gmail.com');
+	mailto_link.setAttribute('href','mailto:benjaminyu@yubenjamin.com');
 	mailto.appendChild(mailto_link);
 	links.appendChild(mailto);
 	make_footer_link(links,'Resume','./documents/BenjaminYuResume.pdf');

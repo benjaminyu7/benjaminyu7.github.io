@@ -5,7 +5,7 @@ import { Card, CardMedia, Grid } from "@mui/material";
 function AboutMePage() {
   let links = [
     {
-      link: "mailto:benjaminyu.741@gmail.com",
+      link: "mailto:benjaminyu@yubenjamin.com",
       image: "/images/emailLogo.png",
       alt: "mail",
     },
