@@ -6,20 +6,23 @@
             "location":"Microsoft Azure DNS",
             "dates":"February 2022 - Present",
             "tasks": [
-                "Develop new Azure DNS features and deploy changes to production servers in hundreds of servers across 25 global regions",
-                "Automated validation of production builds using: Functional Testing, Stress testing and Automated Azure Resource creation",
+                "Designed and implemented new Azure DNS features and deploys changes to production servers in 5000 servers across 80 global regions",
+                "Automated validation and deployment of production builds using: Functional Testing, Stress testing and Automated Azure Resource creation",
                 "Mitigate and resolve external customer concerns with Azure DNS SLA"
             ], 
-            "technologies": [ "Azure", "C#", "Powershell", ".NET" ]
+            "technologies": [ "Azure", "C#", "Powershell", ".NET", "VMSS", "Azure Cloud Service" ]
         },
         {
             "title":"Software Development Engineer",
             "location":"Amazon Pharmacy",
             "dates":"June 2019 - February 2022",
             "tasks": [
-                "Create a serverless orchestrator for replacement orders and notifications.",
-                "Create, configure and deploy service with continuous integration to onboard with the service of a partner team",
-                "Develop service to inform customers of healthcare payment options in Java to create consistency in information displayed on the retail site and AB tested to ensure positive customer experience"
+                "Designed and delivered automated accounting service as a distributed system with continuous integration",
+                "Designed Pharmacy’s Tax Accounting Automation Project and coordinated with teams in Tax, Accounting and Product to enable Pharmacy to serve customers in all 50 US States",
+                "Designed and implemented Service Infrastructure Monitoring package adopted in 16 services, reducing development time by 32 developer weeks",
+                "Delivered new discount card payment program, delivering features using Java full stack development in 4 different services and coordinating integrations with 3 external teams",
+                "Regularly performed 24/7 oncall shifts with monitoring of services, resolving customer tickets and mitigation of high severity events",
+                "Mentored and designed projects for three interns, who all received returning full time offers"
             ], 
             "technologies": [ "AWS", "Step Functions", "Lambda", "EC2", "Cloudformation", "Java","Agile Development"]
         },

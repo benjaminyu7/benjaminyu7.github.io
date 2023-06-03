@@ -3,6 +3,7 @@ html {
 	padding:0px;
 	font-family:'Palanquin', sans-serif;
 	font-size:20;
+	background: #629460;
 }
 body {
 	margin:00px;
@@ -13,7 +14,6 @@ body {
 div#Content {
 	display:flex;
 	flex-direction: column;
-	background: #629460;
 }
 p#bio {
 	margin:10px;
