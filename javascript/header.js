@@ -7,7 +7,6 @@ let header_funct = function () {
 	header.appendChild(nameLink);
 
 	let links = [
-		{link: 'technicalWriting.html', text: 'Technical Communication'},
 		{link: '/personalbrandapp/#/blog', text: 'Blog'},
 		{link: '/personalbrandapp/#/contact', text: 'Contact Me'}
 	]
