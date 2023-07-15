@@ -30,7 +30,6 @@ class PersonalBrandApp extends Component {
   render() {
     const { classes } = this.props;
     let links = [
-      { name: "Technical Communication", href: "/technicalWriting.html" },
       { name: "Blog", href: "#/blog" },
       { name: "Contact Me", href: "#/contact" },
     ];
