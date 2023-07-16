@@ -8,7 +8,9 @@ const theme = createTheme({
     secondary: { main: "#629460" }, //russian green
     type: "light",
   },
-  typography: { useNextVariants: true },
+  typography: {
+    fontFamily: 'Palanquin, sans-serif',
+  },
 });
 
 class App extends Component {
