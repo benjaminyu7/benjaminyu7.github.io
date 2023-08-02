@@ -80,13 +80,6 @@ class Blog extends Component {
   }
 
   toggleDrawer = (open) => (event) => {
-    if (
-      event.type === 'keydown' &&
-      (event.key === 'Tab' || event.key === 'Shift')
-    ) {
-      return;
-    }
-
     this.setState({ open });
   };
 
