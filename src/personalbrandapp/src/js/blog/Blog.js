@@ -4,7 +4,8 @@ import { withStyles, makeStyles } from "@mui/styles";
 import { getPost, getPosts } from "./WordPressProxy";
 import MarkdownBlog from "./MarkdownBlog";
 import { ListItemButton as Button } from "@mui/material";
-import Drawer from "@mui/material/Drawer";
+import { Drawer, IconButton } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 import Box from "@mui/material/Box";
 import clsx from "clsx";
 import Card from "@mui/material/Card";
@@ -18,7 +19,10 @@ const drawerWidth = 300;
 class Blog extends Component {
   constructor(props) {
     super(props);
-    this.state = { blogpost: [] };
+    this.state = { 
+      blogpost: [], 
+      open: false 
+    };
     this.classes = this.props;
   }
 
@@ -75,6 +79,10 @@ class Blog extends Component {
     this.setState({ dropdown: dropdownList });
   }
 
+  toggleDrawer = (open) => (event) => {
+    this.setState({ open });
+  };
+
   async componentDidMount() {
     let posts = await getPosts();
     this.updateDropdown(posts);
@@ -85,6 +93,19 @@ class Blog extends Component {
     const { classes } = this.props;
     return (
       <div>
+        <IconButton 
+          onClick={this.toggleDrawer(true)}
+          style={{
+            position: 'absolute',
+            top: 50,
+            right: 0,
+            width: '50px',
+            height: '50px',
+            borderRadius: '0',
+          }}
+        >
+          <MenuIcon />
+        </IconButton>
         <Drawer
           className={clsx(classes.drawer)}
           sx={{
@@ -97,14 +118,16 @@ class Blog extends Component {
               color: "#A78A7F",
             },
           }}
-          variant="permanent"
           anchor="right"
+          open={this.state.open}
+          onClose={this.toggleDrawer(false)}
+          variant="modal"
         >
           <div style={{ display: "flex", flexDirection: "column" }}>
             {this.state.dropdown}
           </div>
         </Drawer>
-        <Box sx={{ width: { sm: `calc(100% - ${drawerWidth}px)` } }}>
+        <Box>
           <Card
             style={{
               backgroundColor: "#E5F4E3",
