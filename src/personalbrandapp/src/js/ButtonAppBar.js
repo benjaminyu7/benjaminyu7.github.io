@@ -33,7 +33,6 @@ export default function ButtonAppBar(props) {
           <Typography
             variant="h6"
             className={classes.menuButton}
-            style={{ color: "#DDA15E" }}
           >
             <Link href={"/"} color="inherit" style={{ textDecoration: 'none' }}>
               {"Benjamin Yu"}
@@ -43,7 +42,7 @@ export default function ButtonAppBar(props) {
             <Typography
               variant="h6"
               className={classes.menuButton}
-              style={{ color: "#A78A7F", textDecoration: 'none' }}
+              style={{ textDecoration: 'none' }}
             >
               <Link href={link.href} color="inherit" style={{ textDecoration: 'none' }}>
                 {link.name}

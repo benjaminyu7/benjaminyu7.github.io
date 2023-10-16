@@ -13,7 +13,7 @@ const styles = (theme) => ({
     paddingTop: theme.spacing(10),
   },
   background: {
-    backgroundColor: "#629460", //russian green
+    backgroundColor: "#f8f8f8",
     minHeight: "100vh",
     padding: theme.spacing(3),
   },
@@ -37,7 +37,7 @@ class PersonalBrandApp extends Component {
     return (
       <div className={classes.background}>
         <Router>
-          <ButtonAppBar links={links} />
+          <ButtonAppBar links={links} theme={this.props.theme}/>
           <div className={classes.headerSpace} />
           <Routes>
             <Route

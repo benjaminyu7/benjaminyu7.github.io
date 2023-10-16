@@ -4,7 +4,7 @@ div.ResumeItem {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 20px;
-    background: #E5F4E3;
+    background: #ffffff;
 }
 
 .ResumeItem h3 {
@@ -32,5 +32,5 @@ div.ResumeItem {
 	display: inline;
     font-size: 16px;
     border-radius: 10px;
-    border: 1px solid #A78A7F;
+    border: 1px solid #000000;
 }

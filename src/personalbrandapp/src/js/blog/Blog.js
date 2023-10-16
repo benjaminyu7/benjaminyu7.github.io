@@ -38,7 +38,6 @@ class Blog extends Component {
           <h1>{title}</h1>
           <div
             style={{
-              backgroundColor: "#E5F4E3",
               width: "100",
               padding: 20,
               objectFit: "contain",
@@ -114,8 +113,6 @@ class Blog extends Component {
             "& .MuiDrawer-paper": {
               width: drawerWidth,
               boxSizing: "border-box",
-              backgroundColor: "#292F36",
-              color: "#A78A7F",
             },
           }}
           anchor="right"
@@ -130,7 +127,6 @@ class Blog extends Component {
         <Box>
           <Card
             style={{
-              backgroundColor: "#E5F4E3",
               padding: 20,
               objectFit: "contain",
               overflow: "hidden",
