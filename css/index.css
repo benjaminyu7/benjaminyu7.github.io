@@ -3,7 +3,7 @@ html {
 	padding:0px;
 	font-family:'Palanquin', sans-serif;
 	font-size:20;
-	background: #629460;
+	background: #f8f8f8;
 }
 body {
 	margin:00px;
@@ -15,6 +15,16 @@ div#Content {
 	display:flex;
 	flex-direction: column;
 }
+
+#bio_wrapper {
+	display: flex; 
+	width:800px; 
+	align-self:center; 
+	margin-top:50px;
+	background: #ffffff;
+    border-radius: 20px;
+}
+
 p#bio {
 	margin:10px;
 	margin-left:20px;
@@ -25,14 +35,13 @@ p#bio {
 }
 
 #bio_pic {
-	margin:10px;
+	margin:20px;
 	border-radius: 50%;
-	border: 3px solid #FFFFFF;
 }
 
 ul#menu {
 	width: 200px;
-	background: #79d279;
+	background: #ffffff;
 	padding: 0px;
 	margin: 0px;
 	list-style:none;

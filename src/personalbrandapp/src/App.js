@@ -4,8 +4,8 @@ import PersonalBrandApp from "./js/PersonalBrandApp";
 
 const theme = createTheme({
   palette: {
-    primary: { main: "#292F36" }, //gunmetal
-    secondary: { main: "#629460" }, //russian green
+    primary: { main: "#e3f5e3" },
+    secondary: { main: "#ffffff" },
     type: "light",
   },
   typography: {

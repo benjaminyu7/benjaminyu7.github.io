@@ -2,7 +2,7 @@
 	margin-top: 20px;
 }
 div#footer {
-	background: #292F36;
+	background: #ffffff;
 	text-align: right;
 }
 #footer ul {
@@ -15,5 +15,5 @@ div#footer {
 }
 #footer a {
 	text-decoration: none;
-	color: #A78A7F;
+	color: #000000;
 }

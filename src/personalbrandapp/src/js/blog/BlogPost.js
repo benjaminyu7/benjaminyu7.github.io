@@ -13,7 +13,6 @@ const styles = (theme) => ({
     ...theme.typography.body2,
     padding: theme.spacing(3),
     margin: 0,
-    backgroundColor: "#E5F4E3", //honey dew
   },
 });
 
