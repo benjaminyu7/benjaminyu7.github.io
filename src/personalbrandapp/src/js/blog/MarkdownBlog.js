@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import BlogPost from "./BlogPost";
+import BlogPost from "./MarkdownBlogPost";
 import PropTypes from "prop-types";
 import { withStyles } from "@mui/styles";
 
