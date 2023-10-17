@@ -8,7 +8,7 @@ import { Drawer, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import Box from "@mui/material/Box";
 import clsx from "clsx";
-import Card from "@mui/material/Card";
+import BlogPost from "./BlogPost"
 
 const styles = (theme) => ({});
 const drawerWidth = 300;
@@ -35,16 +35,7 @@ class Blog extends Component {
     this.setState({
       post: (
         <>
-          <h1>{title}</h1>
-          <div
-            style={{
-              width: "100",
-              padding: 20,
-              objectFit: "contain",
-              overflow: "hidden",
-            }}
-            dangerouslySetInnerHTML={{ __html: content }}
-          />
+          <BlogPost title={title} content={content}/>
         </>
       ),
     });
@@ -53,10 +44,10 @@ class Blog extends Component {
   openDeprecatedBlog() {
     this.setState({
       post: (
-        <>
+        <div>
           <h1>Archive</h1>
           <MarkdownBlog blogposts={this.props.blogposts} />
-        </>
+        </div>
       ),
     });
   }
@@ -83,9 +74,9 @@ class Blog extends Component {
   };
 
   async componentDidMount() {
-    let posts = await getPosts();
-    this.updateDropdown(posts);
-    this.openDeprecatedBlog();
+    let getPostsResponse = await getPosts();
+    this.updateDropdown(getPostsResponse);
+    this.openPost(getPostsResponse.posts[0].ID);
   }
 
   render() {
@@ -124,16 +115,8 @@ class Blog extends Component {
             {this.state.dropdown}
           </div>
         </Drawer>
-        <Box>
-          <Card
-            style={{
-              padding: 20,
-              objectFit: "contain",
-              overflow: "hidden",
-            }}
-          >
-            {this.state.post}
-          </Card>
+        <Box style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+          {this.state.post}
         </Box>
       </div>
     );

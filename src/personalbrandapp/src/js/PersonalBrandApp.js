@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import Blog from "./blog/Blog";
 import ButtonAppBar from "./ButtonAppBar";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
 import BLOGPOST from "../blogposts/blogpost.json";
 import { withStyles } from "@mui/styles";
 import AboutMePage from "./page/AboutMePage";
@@ -15,7 +13,6 @@ const styles = (theme) => ({
   background: {
     backgroundColor: "#f8f8f8",
     minHeight: "100vh",
-    padding: theme.spacing(3),
   },
 });
 
@@ -51,11 +48,7 @@ class PersonalBrandApp extends Component {
               <Route
                 path="blog"
                 element={
-                  <Container>
-                    <Grid item xs={12} md={12}>
-                      <Blog blogposts={BLOGPOST} />
-                    </Grid>
-                  </Container>
+                  <Blog  blogposts={BLOGPOST} />
                 }
               />
               <Route path="contact" element={<AboutMePage />} />
