@@ -8,15 +8,10 @@ import Link from "@mui/material/Link";
 const useStyles = makeStyles((theme) => ({
   menuButton: {
     paddingRight: theme.spacing(2),
-    height: '50px',
-  },
-  title: {
-    flexGrow: 1,
   },
   root: {
     background: '#292F36',
     display: 'flex',
-    height: '50px',
     width: '100%',
     position: 'fixed',
   }
