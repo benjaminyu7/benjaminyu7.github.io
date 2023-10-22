@@ -87,7 +87,7 @@ class Blog extends Component {
           onClick={this.toggleDrawer(true)}
           style={{
             position: 'absolute',
-            top: 50,
+            top: 64,
             right: 0,
             width: '50px',
             height: '50px',
