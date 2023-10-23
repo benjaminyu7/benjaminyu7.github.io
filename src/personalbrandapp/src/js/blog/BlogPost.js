@@ -10,7 +10,10 @@ export default function BlogPost(props) {
     <div>
       {isMobile && 
         <div
-            style={{background: 'white'}}
+            style={{
+              background: 'white',
+              padding: '10px',
+            }}
         >
           <h1>{props.title}</h1>
           <div
