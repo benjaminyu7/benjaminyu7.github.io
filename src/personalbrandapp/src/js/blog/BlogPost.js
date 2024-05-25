@@ -7,7 +7,7 @@ export default function BlogPost(props) {
   const isDesktop = useMediaQuery("(min-width: 701px)");
 
   return (
-    <div>
+    <div style={{display: "flex", flexDirection: "column"}}>
       {isMobile && 
         <div
             style={{
@@ -25,7 +25,6 @@ export default function BlogPost(props) {
             style={{
               padding: 20,
               objectFit: "contain",
-              overflow: "hidden",
               maxWidth: '700px', 
               alignSelf: 'center',
             }}

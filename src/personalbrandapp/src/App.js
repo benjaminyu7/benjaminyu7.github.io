@@ -25,7 +25,7 @@ class App extends Component {
     const { classes } = this.props;
 
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme} height="100%">
         <PersonalBrandApp />
       </ThemeProvider>
     );

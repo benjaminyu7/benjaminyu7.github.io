@@ -32,7 +32,7 @@ function AboutMePage() {
   ];
   return (
     <div>
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={2} justifyContent="center" marginTop="0px">
         {links.map((link) => (
           <Grid item>
             <Link href={link.link} target="_blank">

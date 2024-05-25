@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
     background: '#292F36',
     display: 'flex',
     width: '100%',
-    position: 'fixed',
   }
 }));
 
@@ -23,8 +22,8 @@ export default function ButtonAppBar(props) {
 
   return (
     <div>
-      <AppBar className={classes.root} position="fixed">
-        <Toolbar>
+      <AppBar position='relative' className={classes.root}>
+        <Toolbar >
           <Typography
             variant="h6"
             className={classes.menuButton}

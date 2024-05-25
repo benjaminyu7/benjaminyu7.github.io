@@ -82,7 +82,7 @@ class Blog extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div>
+      <div style={{height:"100%", overflow:"scroll"}}>
         <IconButton 
           onClick={this.toggleDrawer(true)}
           style={{
@@ -115,7 +115,7 @@ class Blog extends Component {
             {this.state.dropdown}
           </div>
         </Drawer>
-        <Box style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Box style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: 20 }}>
           {this.state.post}
         </Box>
       </div>

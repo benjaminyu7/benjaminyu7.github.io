@@ -7,12 +7,11 @@ import AboutMePage from "./page/AboutMePage";
 import { Outlet, HashRouter as Router, Routes, Route } from "react-router-dom";
 
 const styles = (theme) => ({
-  headerSpace: {
-    paddingTop: theme.spacing(10),
-  },
   background: {
     backgroundColor: "#f8f8f8",
-    minHeight: "100vh",
+    height: "100%",
+    flexDirection: "column",
+    display: 'flex',
   },
 });
 
@@ -29,13 +28,13 @@ class PersonalBrandApp extends Component {
     let links = [
       { name: "Blog", href: "#/blog" },
       { name: "Contact Me", href: "#/contact" },
+      { name: "Cinematic Playlist", href: "#/cinematic" },
     ];
 
     return (
       <div className={classes.background}>
-        <Router>
+        <Router >
           <ButtonAppBar links={links} theme={this.props.theme}/>
-          <div className={classes.headerSpace} />
           <Routes>
             <Route
               path="/"
@@ -52,6 +51,7 @@ class PersonalBrandApp extends Component {
                 }
               />
               <Route path="contact" element={<AboutMePage />} />
+              <Route path="cinematic" element={<div style={{ display: 'flex', height: '100%' }}><iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?si=sSBXKn0vMU3bcFO7&amp;list=PL3FWdJvhPq0FZcBZQ2r2VJgZW3BLH0yVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>} />
             </Route>
           </Routes>
         </Router>
