@@ -5,13 +5,15 @@ import BLOGPOST from "../blogposts/blogpost.json";
 import { withStyles } from "@mui/styles";
 import AboutMePage from "./page/AboutMePage";
 import { Outlet, HashRouter as Router, Routes, Route } from "react-router-dom";
-
+import ResumePage from "./page/ResumePage";
+import resume from "./resume/resume.json";;
 const styles = (theme) => ({
   background: {
     backgroundColor: "#f8f8f8",
     height: "100%",
     flexDirection: "column",
     display: 'flex',
+    overflowY: 'scroll',
   },
 });
 
@@ -26,6 +28,7 @@ class PersonalBrandApp extends Component {
   render() {
     const { classes } = this.props;
     let links = [
+      { name: "Resume", href: "#/resume" },
       { name: "Blog", href: "#/blog" },
       { name: "Contact Me", href: "#/contact" },
       { name: "Cinematic Playlist", href: "#/cinematic" },
@@ -45,6 +48,14 @@ class PersonalBrandApp extends Component {
               }
             >
               <Route
+                path="/"
+                element={<ResumePage data={resume} />}
+              />
+              <Route
+                path="resume"
+                element={<ResumePage data={resume} />}
+              />
+              <Route
                 path="blog"
                 element={
                   <Blog  blogposts={BLOGPOST} />
@@ -61,3 +72,4 @@ class PersonalBrandApp extends Component {
 }
 
 export default withStyles(styles)(PersonalBrandApp);
+

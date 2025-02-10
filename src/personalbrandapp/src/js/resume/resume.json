@@ -1,0 +1,72 @@
+{
+    "biography": "I am a Software Developer at Microsoft and develop backend services for Azure DNS. I received my Bachelor of Science in Computer Science from Stony Brook University, New York in May of 2019",
+    "workExperiences": [
+        {
+            "title":"Software Developer",
+            "location":"Microsoft Azure DNS",
+            "dates":"February 2022 - Present",
+            "tasks": [
+                "Designed and implemented new Azure DNS features and deploys changes to production servers in 5000 servers across 80 global regions",
+                "Automated validation and deployment of production builds using: Functional Testing, Stress testing and Automated Azure Resource creation",
+                "Mitigate and resolve external customer concerns with Azure DNS SLA"
+            ], 
+            "technologies": [ "Azure", "C#", "Powershell", ".NET", "VMSS", "Azure Cloud Service" ]
+        },
+        {
+            "title":"Software Development Engineer",
+            "location":"Amazon Pharmacy",
+            "dates":"June 2019 - February 2022",
+            "tasks": [
+                "Designed and delivered automated accounting service as a distributed system with continuous integration",
+                "Designed Pharmacy’s Tax Accounting Automation Project and coordinated with teams in Tax, Accounting and Product to enable Pharmacy to serve customers in all 50 US States",
+                "Designed and implemented Service Infrastructure Monitoring package adopted in 16 services, reducing development time by 32 developer weeks",
+                "Delivered new discount card payment program, delivering features using Java full stack development in 4 different services and coordinating integrations with 3 external teams",
+                "Regularly performed 24/7 oncall shifts with monitoring of services, resolving customer tickets and mitigation of high severity events",
+                "Mentored and designed projects for three interns, who all received returning full time offers"
+            ], 
+            "technologies": [ "AWS", "Step Functions", "Lambda", "EC2", "Cloudformation", "Java","Agile Development"]
+        },
+        {
+            "title":"High Performance Computing Engineer", 
+            "location":"Institution for Advanced Computational Science", 
+            "dates":"May 2018 - May 2019",
+            "tasks": ["Implemented unit tests to automate software environment maintenance of over 100 open source and enterprise applications in a parallel file system on CentOS Linux",
+                "Convert code to run in parallel using multiple nodes and cores",
+                "Resolved hundreds of Customer Service tickets by troubleshooting and debugging system issues"], 
+            "technologies": ["Bash","Python","CentOS","GPFS","Torque"]
+        }
+    ],
+    "education": {
+        "school": "Stony Brook University",
+        "degree": "Bachelor of Science in Computer Science",
+        "graduationDate": "May 2019",
+        "courses": ["Coursework: Software Development, Cloud Computing, Databases, Programming Languages, Algorithms, Machine Learning, Networking, System Fundamentals, Data Structures"]
+    },
+    "projects": [
+        {
+            "title": "Stack Overflow Clone",
+            "dates": "Spring 2019",
+            "tasks": ["Architected a system to sustain load of 1000 current users with 99% of requests handled in under 500ms"],
+            "technologies": ["Python","Flask","Ansible Playbook", "Open-Stack", "Rabbit-MQ", "Cassandra", "MongoDB"]
+        },
+        {
+            "title": "Comic Website",
+            "dates": "Spring 2019",
+            "tasks": ["Developed the frontend of a website to create, upload and consume online comics. "],
+            "technologies": ["React.js","Material-UI","Spring", "MySql"]
+        },
+        {
+            "title": "Synchronized To-do List",
+            "dates": "Summer 2018", 
+            "tasks": ["Online to-do list accessible across mobile and web clients, allowing users to retrieve and update their list globally."],
+            "technologies": ["React-Native", "React.js", "Ajax", "Html", "CSS", "AWS", "PHP", "MySql", "Git"]
+        },
+        {
+            "title": "Game Win Predictor",
+            "dates": "Spring 2018", 
+            "tasks": ["Implemented Machine Learning Models to predict wins from character selection and game mode with 60% Accuracy."],
+            "technologies": ["Python","Tensorflow"]
+        }
+    ]
+}
+		
