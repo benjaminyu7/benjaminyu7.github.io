@@ -25,13 +25,19 @@ function AboutMePage() {
       alt: "linkedin",
     },
     {
+      link: "https://bsky.app/profile/moorguard.bsky.social",
+      image: "/images/bluesky.png",
+      alt: "bluesky",
+    },
+    {
       link: "https://www.youtube.com/channel/UCzChIC0sJ0SZw6nETDi35oA",
       image: "/images/youtubelogo_icon_fullcolor_white.original.jpg",
       alt: "youtube",
     },
   ];
+
   return (
-    <div>
+    <div style={{ maxWidth: 1000, margin: 'auto' }}>
       <Grid container spacing={2} justifyContent="center" marginTop="0px">
         {links.map((link) => (
           <Grid item>
