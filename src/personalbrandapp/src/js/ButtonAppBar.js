@@ -4,15 +4,20 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
+import Button from '@mui/material/Button';
+import { Container } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
   menuButton: {
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(2),
     paddingRight: theme.spacing(2),
   },
   root: {
     background: '#292F36',
     display: 'flex',
     width: '100%',
+    flexDirection: 'column',
   }
 }));
 
@@ -23,26 +28,33 @@ export default function ButtonAppBar(props) {
   return (
     <div>
       <AppBar position='relative' className={classes.root}>
-        <Toolbar >
-          <Typography
-            variant="h6"
-            className={classes.menuButton}
-          >
-            <Link href={"/"} color="inherit" style={{ textDecoration: 'none' }}>
-              {"Benjamin Yu"}
-            </Link>
-          </Typography>
-          {links.map((link) => (
-            <Typography
-              variant="h6"
+        <Toolbar style={{justifyContent: 'space-between'}}>
+          <Container>
+            <Button
+              key="/"
+              variant="text"
+              size="large"
               className={classes.menuButton}
-              style={{ textDecoration: 'none' }}
+              href="/"
+              color="inherit"
+              style={{ textDecoration: 'none', margin: 10 }}
             >
-              <Link href={link.href} color="inherit" style={{ textDecoration: 'none' }}>
+              {"Benjamin Yu"}
+            </Button>
+            {links.map((link) => (
+              <Button
+                key={link.href}
+                variant="text"
+                size="large"
+                className={classes.menuButton}
+                href={link.href}
+                color="inherit"
+                style={{ textDecoration: 'none', margin: 10 }}
+              >
                 {link.name}
-              </Link>
-            </Typography>
-          ))}
+              </Button>
+            ))}
+          </Container>
         </Toolbar>
       </AppBar>
     </div>
