@@ -10,7 +10,7 @@ function AboutMePage() {
       alt: "mail",
     },
     {
-      link: "../documents/BenjaminYuResume.pdf",
+      link: "https://docs.google.com/document/d/1cGkj57Fdo9FfO1gtSKR_uN8Y10yQ7v5pLkcKuWlB59g/edit?usp=sharing",
       image: "/images/resumeLogo.png",
       alt: "resume",
     },

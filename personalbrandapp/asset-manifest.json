@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/personalbrandapp/static/css/main.7737f90a.css",
-    "main.js": "/personalbrandapp/static/js/main.9c5a1307.js",
+    "main.js": "/personalbrandapp/static/js/main.b5c7bdc7.js",
     "static/media/seattle.gif": "/personalbrandapp/static/media/seattle.7f72ba43fb66c22ca079.gif",
     "index.html": "/personalbrandapp/index.html",
     "main.7737f90a.css.map": "/personalbrandapp/static/css/main.7737f90a.css.map",
-    "main.9c5a1307.js.map": "/personalbrandapp/static/js/main.9c5a1307.js.map"
+    "main.b5c7bdc7.js.map": "/personalbrandapp/static/js/main.b5c7bdc7.js.map"
   },
   "entrypoints": [
     "static/css/main.7737f90a.css",
-    "static/js/main.9c5a1307.js"
+    "static/js/main.b5c7bdc7.js"
   ]
 }
