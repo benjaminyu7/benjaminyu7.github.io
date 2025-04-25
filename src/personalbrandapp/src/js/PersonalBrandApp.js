@@ -6,7 +6,8 @@ import { withStyles } from "@mui/styles";
 import AboutMePage from "./page/AboutMePage";
 import { Outlet, HashRouter as Router, Routes, Route } from "react-router-dom";
 import ResumePage from "./page/ResumePage";
-import resume from "./resume/resume.json";;
+import resume from "./resume/resume.json";import NotionProxy from "./blog/NotionProxy";
+;
 const styles = (theme) => ({
   background: {
     backgroundColor: "#f8f8f8",
@@ -58,7 +59,7 @@ class PersonalBrandApp extends Component {
               <Route
                 path="blog"
                 element={
-                  <Blog  blogposts={BLOGPOST} />
+                  <NotionProxy />
                 }
               />
               <Route path="contact" element={<AboutMePage />} />
