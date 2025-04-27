@@ -1,7 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import seattleGif from '../resume/seattle.gif';
-import profile from '../resume/profile.jpeg';
+import { Link, Button } from '@mui/material';
 
 const ResumePage = ({ data }) => {
   const styles = {
@@ -44,52 +43,19 @@ const ResumePage = ({ data }) => {
       borderRadius: "10px",
       border: "1px solid #000000",
     },
-    bioWrapper: {
-      display: "flex",
-      width: "100%",
-      alignSelf: "center",
-      marginTop: "50px",
-      background: "#ffffff",
-      borderRadius: "20px",
-      maxWidth: "800px",
-      margin: "0 auto",
-    },
-    bio: {
-      margin: "10px",
-      marginLeft: "20px",
-      padding: "0px",
-      paddingTop: "20px",
-      alignSelf: "center",
-      color: "#000000",
-    },
-    bioPic: {
-      borderRadius: "50%",
-      margin: "20px",
-      width: "100px",
-      height: "100px",
-      objectFit: "cover",
-    },
-    seattleGif: {
-      width: "100%",
-      alignSelf: "center",
-      marginTop: "100px",
-      borderRadius: "20px",
-    },
   };
 
   return (
     <Box style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: 20 }}>
       <div style={{ width: "100%", maxWidth: "800px" }}>
+        <div style={{ display: "flex", justifyContent: "center", padding: "20px" }}>
+          <Link href="https://docs.google.com/document/d/1cGkj57Fdo9FfO1gtSKR_uN8Y10yQ7v5pLkcKuWlB59g/edit?usp=sharing" target="_blank">
+            <Button variant="contained" color="primary">
+              View Resume (Google Doc)
+            </Button>
+          </Link>
+        </div>
         <div className="p-6 bg-white shadow rounded">
-          <section className="mb-6">
-            <img src={seattleGif} alt="seattle-timelapse" style={styles.seattleGif} />
-            <h2 className="text-xl font-semibold">Biography</h2>
-            <div style={styles.bioWrapper}>
-              <img src={profile} alt="Benjamin Yu" style={styles.bioPic} />
-              <p style={styles.bio}>{data.biography}</p>
-            </div>
-          </section>
-
           <section className="mb-6">
             <h2 className="text-xl font-semibold">Work Experience</h2>
             {data.workExperiences.map((job, index) => (
@@ -138,6 +104,8 @@ const ResumePage = ({ data }) => {
               </div>
             ))}
           </section>
+
+
         </div>
       </div>
     </Box>

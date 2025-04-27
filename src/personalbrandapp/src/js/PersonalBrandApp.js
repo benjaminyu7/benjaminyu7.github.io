@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import Blog from "./blog/Blog";
 import ButtonAppBar from "./ButtonAppBar";
-import BLOGPOST from "../blogposts/blogpost.json";
 import { withStyles } from "@mui/styles";
 import AboutMePage from "./page/AboutMePage";
 import { Outlet, HashRouter as Router, Routes, Route } from "react-router-dom";
 import ResumePage from "./page/ResumePage";
 import resume from "./resume/resume.json";import NotionProxy from "./blog/NotionProxy";
+import LandingPage from "./page/LandingPage";
 ;
 const styles = (theme) => ({
   background: {
@@ -32,7 +31,6 @@ class PersonalBrandApp extends Component {
       { name: "Resume", href: "#/resume" },
       { name: "Blog", href: "#/blog" },
       { name: "Contact Me", href: "#/contact" },
-      { name: "Cinematic Playlist", href: "#/cinematic" },
     ];
 
     return (
@@ -50,7 +48,7 @@ class PersonalBrandApp extends Component {
             >
               <Route
                 path="/"
-                element={<ResumePage data={resume} />}
+                element={<LandingPage />}
               />
               <Route
                 path="resume"
@@ -63,7 +61,6 @@ class PersonalBrandApp extends Component {
                 }
               />
               <Route path="contact" element={<AboutMePage />} />
-              <Route path="cinematic" element={<div style={{ display: 'flex', height: '100%' }}><iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?si=sSBXKn0vMU3bcFO7&amp;list=PL3FWdJvhPq0FZcBZQ2r2VJgZW3BLH0yVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>} />
             </Route>
           </Routes>
         </Router>

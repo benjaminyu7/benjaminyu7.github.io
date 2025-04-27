@@ -2,8 +2,6 @@ import React from "react";
 import { makeStyles } from "@mui/styles";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
 import Button from '@mui/material/Button';
 import { Container } from "@mui/material";
 
@@ -18,6 +16,12 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     width: '100%',
     flexDirection: 'column',
+    height: theme.spacing(8), // Add this line to set a fixed height
+    overflowX: 'auto', // Add this line
+  },
+  buttonContainer: {
+    display: 'flex',
+    whiteSpace: 'nowrap', // Add this line
   }
 }));
 
@@ -29,7 +33,7 @@ export default function ButtonAppBar(props) {
     <div>
       <AppBar position='relative' className={classes.root}>
         <Toolbar style={{justifyContent: 'space-between'}}>
-          <Container>
+          <Container className={classes.buttonContainer}>
             <Button
               key="/"
               variant="text"

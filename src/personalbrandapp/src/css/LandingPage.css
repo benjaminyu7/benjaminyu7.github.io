@@ -1,0 +1,54 @@
+.landing-page {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.background {
+  margin-bottom: 20px;
+}
+
+.value-proposition {
+  margin-bottom: 20px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+  .landing-page {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header {
+    width: 100%;
+  }
+  .background, .value-proposition {
+    margin-bottom: 10px;
+  }
+}
+
+/* Additional styles for better layout on large screens */
+@media only screen and (min-width: 1200px) {
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  .header {
+    width: 100%;
+  }
+  .background, .value-proposition {
+    width: 1200px;
+  }
+}
